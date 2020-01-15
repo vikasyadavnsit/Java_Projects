@@ -5,9 +5,9 @@ plugins {
 	id 'war'
 }
 
-group = 'org'
+group = 'org.api'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '8'
+sourceCompatibility = '1.8'
 
 configurations {
 	developmentOnly
@@ -26,14 +26,17 @@ ext {
 
 
 dependencies {
+	  
+	//implementation 'org.springframework.boot:spring-boot-starter-mail'  
+	  
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	//Rabbit MQ
 	//implementation 'org.springframework.boot:spring-boot-starter-amqp'
 	
 	//spring boot actuator admin panel
 	implementation 'org.springframework.boot:spring-boot-starter-security'
-  	implementation 'de.codecentric:spring-boot-admin-starter-client'
-  
+	implementation 'de.codecentric:spring-boot-admin-starter-server'
+	
 	//Datbase API
 	//implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
 	//implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
@@ -53,9 +56,9 @@ dependencies {
 }
 
 dependencyManagement {
-  imports {
-    mavenBom "de.codecentric:spring-boot-admin-dependencies:${springBootAdminVersion}"
-  }
+	imports {
+		mavenBom "de.codecentric:spring-boot-admin-dependencies:${springBootAdminVersion}"
+	}
 }
 
 test {
