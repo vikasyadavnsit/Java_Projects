@@ -5,7 +5,7 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 @Component
-@PropertySource("classpath:config.properties")
+@PropertySource("classpath:config-${spring.profiles.active}.properties")
 @ConfigurationProperties("api") // prefix app, find api.* values
 public class ApiConfig {
 
