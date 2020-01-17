@@ -1,0 +1,131 @@
+<configuration>
+
+	<property name="LOGGER_PATH" value="./LOGS" />
+	<property name="EACH_LOG_FILE_SIZE" value="1MB" />
+	<property name="DAYS_TO_SAVE_LOGS" value="20" />
+	<property name="TOTAL_LOG_CAP_SIZE" value="1GB" />
+	<property name="LOG_FILE_APPENDER_PATTERN"
+		value="%d{yyyy-MM-dd HH:mm:ss:SSS} %p : %m%n" />
+
+	<appender name="debugFileAppender"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>DEBUG</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>DENY</onMismatch>
+		</filter>
+		<file>${LOGGER_PATH}/DEBUG.LOG</file>
+		<rollingPolicy
+			class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+			<fileNamePattern>
+				${LOGGER_PATH}/DEBUG/DEBUG__%d{dd-MM-yyyy}__%i.LOG
+			</fileNamePattern>
+			<maxFileSize>${EACH_LOG_FILE_SIZE}</maxFileSize>
+			<maxHistory>${DAYS_TO_SAVE_LOGS}</maxHistory>
+			<totalSizeCap>${TOTAL_LOG_CAP_SIZE}</totalSizeCap>
+		</rollingPolicy>
+		<encoder>
+			<pattern>${LOG_FILE_APPENDER_PATTERN}</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="infoFileAppender"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>INFO</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>DENY</onMismatch>
+		</filter>
+		<file>${LOGGER_PATH}/INFO.LOG</file>
+		<rollingPolicy
+			class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+			<fileNamePattern>
+				${LOGGER_PATH}/INFO/INFO__%d{dd-MM-yyyy}__%i.LOG
+			</fileNamePattern>
+			<maxFileSize>${EACH_LOG_FILE_SIZE}</maxFileSize>
+			<maxHistory>${DAYS_TO_SAVE_LOGS}</maxHistory>
+			<totalSizeCap>${TOTAL_LOG_CAP_SIZE}</totalSizeCap>
+		</rollingPolicy>
+		<encoder>
+			<pattern>${LOG_FILE_APPENDER_PATTERN}</pattern>
+		</encoder>
+	</appender>
+
+
+	<appender name="warnFileAppender"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>WARN</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>DENY</onMismatch>
+		</filter>
+		<file>${LOGGER_PATH}/WARN.LOG</file>
+		<rollingPolicy
+			class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+			<fileNamePattern>
+				${LOGGER_PATH}/WARN/WARN__%d{dd-MM-yyyy}__%i.LOG
+			</fileNamePattern>
+			<maxFileSize>${EACH_LOG_FILE_SIZE}</maxFileSize>
+			<maxHistory>${DAYS_TO_SAVE_LOGS}</maxHistory>
+			<totalSizeCap>${TOTAL_LOG_CAP_SIZE}</totalSizeCap>
+		</rollingPolicy>
+		<encoder>
+			<pattern>${LOG_FILE_APPENDER_PATTERN}</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="errorFileAppender"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>ERROR</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>DENY</onMismatch>
+		</filter>
+		<file>${LOGGER_PATH}/ERROR.LOG</file>
+		<rollingPolicy
+			class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+			<fileNamePattern>
+				${LOGGER_PATH}/ERROR/ERROR__%d{dd-MM-yyyy}__%i.LOG
+			</fileNamePattern>
+			<maxFileSize>${EACH_LOG_FILE_SIZE}</maxFileSize>
+			<maxHistory>${DAYS_TO_SAVE_LOGS}</maxHistory>
+			<totalSizeCap>${TOTAL_LOG_CAP_SIZE}</totalSizeCap>
+		</rollingPolicy>
+		<encoder>
+			<pattern>${LOG_FILE_APPENDER_PATTERN}</pattern>
+		</encoder>
+	</appender>
+
+
+	<appender name="CONSOLE"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%black(%d{ISO8601}) %highlight(%-5level) %yellow(%C{1.}): %msg%n%throwable</pattern>
+		</encoder>
+	</appender>
+
+
+	<springProfile name="dev | staging | test">
+		<root level="INFO">
+			<appender-ref ref="CONSOLE" />
+		</root>
+		<!-- <logger name="org.api" level="DEBUG" additivity="false"> <appender-ref 
+			ref="debugFileAppender" /> <appender-ref ref="infoFileAppender" /> <appender-ref 
+			ref="warnFileAppender" /> <appender-ref ref="errorFileAppender" /> </logger> -->
+	</springProfile>
+
+	<springProfile name="prod">
+		<root level="INFO">
+			<appender-ref ref="CONSOLE" />
+		</root>
+
+		<logger name="org.api" level="DEBUG" additivity="false">
+			<appender-ref ref="debugFileAppender" />
+			<appender-ref ref="infoFileAppender" />
+			<appender-ref ref="warnFileAppender" />
+			<appender-ref ref="errorFileAppender" />
+		</logger>
+	</springProfile>
+
+
+</configuration>
