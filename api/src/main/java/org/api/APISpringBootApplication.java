@@ -10,7 +10,7 @@ import org.springframework.data.jdbc.repository.config.EnableJdbcRepositories;
 
 @Configuration
 @SpringBootApplication
-//@EnableJdbcRepositories(basePackageClasses = UserRepository.class)
+@EnableJdbcRepositories(basePackageClasses = UserRepository.class)
 public class APISpringBootApplication {
 
 	private static Logger logger = LoggerFactory.getLogger(APISpringBootApplication.class);
