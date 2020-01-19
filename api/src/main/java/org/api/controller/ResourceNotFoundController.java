@@ -9,10 +9,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+//@RestController
 public class ResourceNotFoundController implements ErrorController {
 
-	@RequestMapping("/error")
+	//@RequestMapping("/error")
 	public ResourceNotFoundWrapper handleError() {
 		ResourceNotFoundWrapper wrapper = new ResourceNotFoundWrapper();
 		wrapper.setCode(String.valueOf(HttpStatus.NOT_FOUND.value()));
