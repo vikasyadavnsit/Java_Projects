@@ -36,9 +36,10 @@ public class PortalCorsFilter implements Filter {
 		res.setHeader("Access-Control-Allow-Methods", "POST, PUT, DELETE, GET, OPTIONS");
 		res.setHeader("Access-Control-Max-Age", "3600");
 		res.addHeader("Access-Control-Expose-Headers", "xsrf-token");
-		res.setHeader("Access-Control-Allow-Headers",
-				"Content-Type, Accept, X-Requested-With, remember-me, Origin, Authorization, client-security-token,
-			      X-CSRF-TOKEN, X-API-Key,append,delete,entries,foreach,get,has,keys,set,values");
+		res.setHeader("Access-Control-Allow-Headers","Content-Type, Accept, X-Requested-With, 
+			      remember-me, Origin, Authorization, client-security-token,
+			      X-CSRF-TOKEN, X-API-Key,append,delete,entries,foreach,get,
+			      has,keys,set,values");
 		if ("OPTIONS".equals(req.getMethod())) {
 			res.setStatus(HttpServletResponse.SC_OK);
 		} else {
