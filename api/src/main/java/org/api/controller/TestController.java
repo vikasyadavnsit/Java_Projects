@@ -1,6 +1,13 @@
 package org.api.controller;
 
+import java.sql.Timestamp;
+import java.util.Arrays;
+import java.util.List;
+
 import org.api.configuration.ApiConfig;
+import org.api.repository.UserRepository;
+import org.api.wrapper.UserRolesWrapper;
+import org.api.wrapper.UserWrapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +27,9 @@ public class TestController {
 	@Autowired
 	private ApiConfig apiConfig;
 
+	@Autowired
+	private UserRepository userRepository;
+
 	@GetMapping("/")
 	public String all() {
 		return "Everyone";
@@ -36,9 +46,31 @@ public class TestController {
 	}
 
 	@RequestMapping("/test")
-	public String test() throws InterruptedException {
-		Thread.sleep(5000);
-		return apiConfig.getDefaultMessage() + env.getProperty("app.messages");
+	public List<UserWrapper> test() throws InterruptedException {
+		List<UserWrapper> userList = null;
+		try {
+			UserWrapper user = new UserWrapper();
+			user.setUserName("admin" + Math.random());
+			user.setPassword("admin");
+			user.setActive("Y");
+			user.setCreatedOn(new Timestamp(System.currentTimeMillis()));
+
+			UserRolesWrapper user1Role = new UserRolesWrapper();
+			user1Role.setActive("Y");
+			user1Role.setRole("ADMIN");
+
+			UserRolesWrapper user2Role = new UserRolesWrapper();
+			user2Role.setActive("Y");
+			user2Role.setRole("USER");
+
+			user.setAuthorities(Arrays.asList(user1Role, user2Role));
+			UserWrapper userSaved = userRepository.save(user);
+			userList = userRepository.findAll();
+		} catch (Exception e) {
+			logger.error("SQL Exception Occured : " + e.getMessage());
+		}
+		return userList;
+		// return apiConfig.getDefaultMessage() + env.getProperty("app.messages");
 	}
 
 }

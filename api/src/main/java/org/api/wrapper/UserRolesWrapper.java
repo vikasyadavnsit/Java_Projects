@@ -11,32 +11,15 @@ import javax.persistence.Table;
 @Table(name = "user_roles")
 public class UserRolesWrapper {
 
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 
-	@Id
-	@Column(name = "user_name")
-	private String userName;
-
+	@Column(nullable = false, length = 50)
 	private String role;
 
+	@Column(nullable = false, length = 1)
 	private String active;
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
-
-	public String getUserName() {
-		return userName;
-	}
-
-	public void setUserName(String userName) {
-		this.userName = userName;
-	}
 
 	public String getRole() {
 		return role;
@@ -52,6 +35,14 @@ public class UserRolesWrapper {
 
 	public void setActive(String active) {
 		this.active = active;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 }

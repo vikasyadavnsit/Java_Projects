@@ -6,5 +6,5 @@ import org.api.wrapper.UserWrapper;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository extends JpaRepository<UserWrapper, Integer> {
-   Optional<UserWrapper> findByUserName(String userName);
+	Optional<UserWrapper> findByUserName(String userName);
 }
