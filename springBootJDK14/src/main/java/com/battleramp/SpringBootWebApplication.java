@@ -1,13 +1,13 @@
-package com.battleramp.springBootJDK14;
+package com.battleramp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootJdk14Application {
+public class SpringBootWebApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootJdk14Application.class, args);
+		SpringApplication.run(SpringBootWebApplication.class, args);
 	}
 
 }
