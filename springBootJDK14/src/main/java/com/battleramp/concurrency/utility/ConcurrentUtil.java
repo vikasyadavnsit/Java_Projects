@@ -6,17 +6,26 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.Random;
+import java.util.StringJoiner;
 import java.util.concurrent.Callable;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.Future;
+import java.util.concurrent.Phaser;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import com.battleramp.concurrency.dao.ReadWriteLockData;
 import com.battleramp.concurrency.services.TestService;
+
+import io.netty.util.internal.ThreadLocalRandom;
 
 @Component
 public class ConcurrentUtil {
@@ -51,6 +60,7 @@ public class ConcurrentUtil {
 			callables.add(new ParalleSum(list.subList(i, Math.min(i + partitionSize, list.size()))));
 		}
 
+		// It waits for all threads to complete, then result the result
 		List<Future<BigInteger>> taskFutureList = service.invokeAll(callables);
 
 		for (Future<BigInteger> temp : taskFutureList)
@@ -85,11 +95,93 @@ public class ConcurrentUtil {
 		OddEvenReentrantLock.maxCount = maxCount;
 		new Thread(() -> OddEvenReentrantLock.oddCount()).start();
 		new Thread(() -> OddEvenReentrantLock.evenCount()).start();
-		return "Sequencial Odd Even Count Completed";
+		return "Sequencial Odd Even Count Completed Upto " + maxCount;
 	}
 
-	public String readWriteLock() {
-		return "";
+	public String readWriteLockImplementation() {
+		List<String> list = ReadWriteLockData.get();
+		Random rand = new Random(987654321L);
+		for (int i = 0; i < 10; i++) {
+			// Create Reader Thread
+			if (rand.nextInt(10) % 3 != 0) {
+				new Thread(() -> new ReadWriteLock(list).readList()).start();
+			}
+			// Create Writer Thread
+			else {
+				new Thread(() -> new ReadWriteLock(list).writeList()).start();
+			}
+		}
+		return "ReadWriteLock Implementation Successfull.";
+	}
+
+	public String interruptsImplementation() throws Exception {
+		List<Integer> list = testService.getLargeIntList().subList(0, 100);
+		int partitionSize = 10;
+
+		List<Future<List<Integer>>> taskFutureList = new ArrayList<>();
+		ExecutorService service = Executors.newCachedThreadPool();
+
+		for (int i = 0; i < list.size(); i += partitionSize) {
+			Future<List<Integer>> future = service
+					.submit(new ThreadInterrupts(list.subList(i, Math.min(i + partitionSize, list.size()))));
+			taskFutureList.add(future);
+		}
+
+		Thread.sleep(500);
+		List<Integer> primes = new ArrayList<>();
+		for (Future<List<Integer>> futurePlaceholder : taskFutureList) {
+			if (futurePlaceholder.isDone()) {
+				primes.addAll(futurePlaceholder.get());
+			} else {
+				System.out.println("Interrupted a thread.");
+				futurePlaceholder.cancel(true);
+			}
+		}
+
+		primes.stream().sorted().forEach(System.out::println);
+		service.shutdown();
+		return "Thread Interrupt Work";
+	}
+
+	public String phaserImplementation() {
+		// Phaser can act as both Cyclic Barrier and CoundDownLatch, along with dynamic
+		// addition and removal of parties to it.
+		ScheduledExecutorService scheduledService = Executors.newScheduledThreadPool(20);
+		// Self Registration
+		Phaser phaser = new Phaser();
+		phaser.register();
+		for (int i = 0; i < 5; i++) {
+			scheduledService.schedule(new PhaserTasks(phaser), ThreadLocalRandom.current().nextInt(500),
+					TimeUnit.MILLISECONDS);
+		}
+
+		System.out.println("Waiting for " + phaser.getRegisteredParties() + " parties of Phase " + phaser.getPhase()
+				+ " to Finish");
+		phaser.arriveAndAwaitAdvance();
+		phaser.arriveAndDeregister();
+
+		System.out.println("###### Starting New Dynamic Phases #######");
+
+		scheduledService.shutdown();
+		System.out.println("######## Initiated Shut Down for Scheduled Service ########");
+		while (!scheduledService.isTerminated()) {
+		}
+		System.out.println("Shut Down Completes");
+		return "Phaser Implemented Successfully.";
+	}
+
+	public String forkJoinPoolImplementation() throws Exception {
+		// RecursiveAction Doesn't return result
+		// RecursiveTask Return the result
+		List<Integer> list = testService.getLargeIntList();
+
+		ForkJoinPool forkJoinPool = new ForkJoinPool();
+		List<Integer> divisibleBy11 = forkJoinPool.invoke(new ForkJoinRecursiveTask(list.size(), list));
+		StringJoiner sj = new StringJoiner("<br>");
+		for (Integer temp : divisibleBy11)
+			sj.add(temp.toString());
+		forkJoinPool.shutdown();
+		return "Fork Join Implementation Successful :<br>" + sj.toString();
 	}
 
 }

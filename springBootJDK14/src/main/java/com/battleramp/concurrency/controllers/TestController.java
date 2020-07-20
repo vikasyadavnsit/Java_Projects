@@ -83,13 +83,41 @@ public class TestController {
 		}
 	}
 
-	@GetMapping("readWriteLock")
+	@GetMapping("readWriteLockImplementation")
 	public ResponseEntity<String> readWriteLock() {
 		try {
-			return ResponseEntity.ok(concurrentUtil.readWriteLock());
+			return ResponseEntity.ok(concurrentUtil.readWriteLockImplementation());
 		} catch (Exception e) {
 			return ResponseEntity.badRequest().body(null);
 		}
 	}
 
+	@GetMapping("interruptsImplementation")
+	public ResponseEntity<String> interruptsImplementation() {
+		try {
+			return ResponseEntity.ok(concurrentUtil.interruptsImplementation());
+		} catch (Exception e) {
+			return ResponseEntity.badRequest().body(null);
+		}
+	}
+	
+	@GetMapping("phaserImplementation")
+	public ResponseEntity<String> phaserImplementation() {
+		try {
+			return ResponseEntity.ok(concurrentUtil.phaserImplementation());
+		} catch (Exception e) {
+			return ResponseEntity.badRequest().body(null);
+		}
+	}
+
+	@GetMapping("forkJoinPoolImplementation")
+	public ResponseEntity<String> forkJoinPoolImplementation() {
+		try {
+			return ResponseEntity.ok(concurrentUtil.forkJoinPoolImplementation());
+		} catch (Exception e) {
+			return ResponseEntity.badRequest().body(null);
+		}
+	}
+
+	
 }
