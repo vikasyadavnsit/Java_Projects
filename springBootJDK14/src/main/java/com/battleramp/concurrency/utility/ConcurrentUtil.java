@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.StringJoiner;
 import java.util.concurrent.Callable;
+import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -18,6 +19,8 @@ import java.util.concurrent.Phaser;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -182,6 +185,37 @@ public class ConcurrentUtil {
 			sj.add(temp.toString());
 		forkJoinPool.shutdown();
 		return "Fork Join Implementation Successful :<br>" + sj.toString();
+	}
+
+	public String completableFutureImplementation() throws Exception {
+		List<Integer> list = testService.getLargeIntList().subList(100, 200);
+
+		ArrayList<CompletableFuture<List<Integer>>> collection = new ArrayList<>();
+
+		CompletableFuture<List<Integer>> completableFuture = CompletableFuture
+				.supplyAsync(() -> CompletableFutureTasks.processTask1(list))
+				.thenApplyAsync(x -> CompletableFutureTasks.processTask2(x)).exceptionallyAsync(e -> {
+					System.out.println("Exception Occured");
+					return null;
+				});
+
+		CompletableFuture<List<Integer>> completableFuture2 = CompletableFuture
+				.supplyAsync(() -> CompletableFutureTasks.processTask1(list))
+				.thenApplyAsync(x -> CompletableFutureTasks.processTask2(x)).exceptionallyAsync(e -> {
+					System.out.println("Exception Occured");
+					return null;
+				});
+
+		List<Integer> combined = Stream.of(completableFuture, completableFuture2).map(CompletableFuture::join)
+				.flatMap(x -> x.stream()).collect(Collectors.toList());
+
+		if (completableFuture.isCompletedExceptionally()) {
+			return "Completed Sucessfully, But exception occured.";
+		}
+		StringJoiner sj = new StringJoiner("<br>");
+		for (Integer temp : combined)
+			sj.add(temp.toString());
+		return "Completable Future Executed Successfully <br>" + sj.toString();
 	}
 
 }

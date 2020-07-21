@@ -6,12 +6,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.battleramp.concurrency.services.TestService;
 import com.battleramp.concurrency.utility.ConcurrentUtil;
 
-@RestController("/concurrency")
+@RestController()
+@RequestMapping("/concurrency")
 public class TestController {
 
 	@Autowired
@@ -20,7 +22,7 @@ public class TestController {
 	@Autowired
 	private ConcurrentUtil concurrentUtil;
 
-	@GetMapping("getLargeModifiableIntList")
+	@GetMapping("/getLargeModifiableIntList")
 	public ResponseEntity<ArrayList<Integer>> getLargeModifiableIntList() {
 		try {
 			return ResponseEntity.ok(testService.getLargeIntList());
@@ -29,7 +31,7 @@ public class TestController {
 		}
 	}
 
-	@GetMapping("getLargeUnModifiableIntList")
+	@GetMapping("/getLargeUnModifiableIntList")
 	public ResponseEntity<ArrayList<Integer>> getLargeUnModifiableIntList() {
 		try {
 			return ResponseEntity.ok(testService.getLargeUnmodifiableIntList());
@@ -38,7 +40,7 @@ public class TestController {
 		}
 	}
 
-	@GetMapping("sequencialSum")
+	@GetMapping("/sequencialSum")
 	public ResponseEntity<String> sequencialSum() {
 		try {
 			return ResponseEntity.ok(concurrentUtil.sequencialSum());
@@ -47,7 +49,7 @@ public class TestController {
 		}
 	}
 
-	@GetMapping("parallelSum")
+	@GetMapping("/parallelSum")
 	public ResponseEntity<String> parallelSum() {
 		try {
 			return ResponseEntity.ok(concurrentUtil.parallelSum());
@@ -56,7 +58,7 @@ public class TestController {
 		}
 	}
 
-	@GetMapping("printSequencialCharThroughMultipleThreads/{count}")
+	@GetMapping("/printSequencialCharThroughMultipleThreads/{count}")
 	public ResponseEntity<String> printSequencialCharThroughMultipleThreads(@PathVariable int count) {
 		try {
 			return ResponseEntity.ok(concurrentUtil.printSequencialCharThroughMultipleThreads(count));
@@ -65,7 +67,7 @@ public class TestController {
 		}
 	}
 
-	@GetMapping("threadLocalImplementation")
+	@GetMapping("/threadLocalImplementation")
 	public ResponseEntity<String> threadLocalImplementation() {
 		try {
 			return ResponseEntity.ok(concurrentUtil.threadLocalImplementation());
@@ -74,7 +76,7 @@ public class TestController {
 		}
 	}
 
-	@GetMapping("oddEvenCountUsingReentrantLock/{count}")
+	@GetMapping("/oddEvenCountUsingReentrantLock/{count}")
 	public ResponseEntity<String> oddEvenCountUsingReentrantLock(@PathVariable("count") int maxCount) {
 		try {
 			return ResponseEntity.ok(concurrentUtil.oddEvenCountUsingReentrantLock(maxCount));
@@ -83,7 +85,7 @@ public class TestController {
 		}
 	}
 
-	@GetMapping("readWriteLockImplementation")
+	@GetMapping("/readWriteLockImplementation")
 	public ResponseEntity<String> readWriteLock() {
 		try {
 			return ResponseEntity.ok(concurrentUtil.readWriteLockImplementation());
@@ -92,7 +94,7 @@ public class TestController {
 		}
 	}
 
-	@GetMapping("interruptsImplementation")
+	@GetMapping("/interruptsImplementation")
 	public ResponseEntity<String> interruptsImplementation() {
 		try {
 			return ResponseEntity.ok(concurrentUtil.interruptsImplementation());
@@ -100,8 +102,8 @@ public class TestController {
 			return ResponseEntity.badRequest().body(null);
 		}
 	}
-	
-	@GetMapping("phaserImplementation")
+
+	@GetMapping("/phaserImplementation")
 	public ResponseEntity<String> phaserImplementation() {
 		try {
 			return ResponseEntity.ok(concurrentUtil.phaserImplementation());
@@ -110,7 +112,7 @@ public class TestController {
 		}
 	}
 
-	@GetMapping("forkJoinPoolImplementation")
+	@GetMapping("/forkJoinPoolImplementation")
 	public ResponseEntity<String> forkJoinPoolImplementation() {
 		try {
 			return ResponseEntity.ok(concurrentUtil.forkJoinPoolImplementation());
@@ -118,6 +120,15 @@ public class TestController {
 			return ResponseEntity.badRequest().body(null);
 		}
 	}
-
 	
+	@GetMapping("/completableFutureImplementation")
+	public ResponseEntity<String> completableFutureImplementation() {
+		try {
+			return ResponseEntity.ok(concurrentUtil.completableFutureImplementation());
+		} catch (Exception e) {
+			return ResponseEntity.badRequest().body(null);
+		}
+	}
+	
+
 }
