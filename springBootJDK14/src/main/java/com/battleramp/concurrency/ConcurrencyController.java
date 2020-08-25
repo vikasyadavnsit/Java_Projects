@@ -1,4 +1,4 @@
-package com.battleramp.concurrency.controllers;
+package com.battleramp.concurrency;
 
 import java.util.ArrayList;
 
@@ -14,7 +14,7 @@ import com.battleramp.concurrency.utility.ConcurrentUtil;
 
 @RestController()
 @RequestMapping("/concurrency")
-public class TestController {
+public class ConcurrencyController {
 
 	@Autowired
 	private TestService testService;

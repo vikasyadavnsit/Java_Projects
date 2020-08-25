@@ -1,7 +1,5 @@
 package com.battleramp.concurrency.utility;
 
-import java.util.Random;
-
 public class UserThreadLocalContext extends Thread {
 
 	static ThreadLocal<Integer> local = new ThreadLocal<>();

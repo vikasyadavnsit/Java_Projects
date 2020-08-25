@@ -1,0 +1,8 @@
+
+
+############# REDIS API #########
+SAVE Person Record :
+http://localhost:8080/redis/savePerson?firstName=vikas&lastName=yadav
+
+FETCH All Person Records:
+http://localhost:8080/redis/getAllPerson

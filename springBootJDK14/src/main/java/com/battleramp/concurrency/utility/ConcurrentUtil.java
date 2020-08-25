@@ -190,7 +190,7 @@ public class ConcurrentUtil {
 	public String completableFutureImplementation() throws Exception {
 		List<Integer> list = testService.getLargeIntList().subList(100, 200);
 
-		ArrayList<CompletableFuture<List<Integer>>> collection = new ArrayList<>();
+		//ArrayList<CompletableFuture<List<Integer>>> collection = new ArrayList<>();
 
 		CompletableFuture<List<Integer>> completableFuture = CompletableFuture
 				.supplyAsync(() -> CompletableFutureTasks.processTask1(list))

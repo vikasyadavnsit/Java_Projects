@@ -2,7 +2,6 @@ package com.battleramp.algorithms;
 
 import java.util.Arrays;
 import java.util.PriorityQueue;
-import java.util.Stack;
 import java.util.stream.IntStream;
 
 public class MinHeap {

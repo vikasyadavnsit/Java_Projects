@@ -1,16 +1,13 @@
 package com.battleramp.algorithms;
 
 import java.util.Arrays;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class Sorting {
 
 	public static void main(String[] args) {
-
 		int arr[] = new int[] { 1, 4, 100, 2, -6, -8, 70, 5, 2, -10, -5, 05 };
 
-		// countingSort(arr);
+		countingSort(arr);
 		// radixSort(arr);
 		// print(arr);
 	}

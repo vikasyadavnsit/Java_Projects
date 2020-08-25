@@ -1,4 +1,4 @@
-package com.battleramp.Challanges.RestAPIS;
+package com.battleramp.challanges;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,7 +13,7 @@ import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 
-public class HackerRankChallange1 {
+public class HackerRankRESTAPIChallange1 {
 
 	static String[] getMovieTitles(String substr) {
 		String response;
