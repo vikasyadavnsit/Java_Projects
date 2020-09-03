@@ -1,8 +1,18 @@
 
 
+############# CONCURRENCY IMPLEMENTATION ###########
+#Root URL ( Sub URL endpoints can be find int the class file )
+http:localhost:8080/concurrency
+
+
+############# OAUTH IMPLEMENTATION ############
+#Root URL
+http:localhost:8080/soap/
+
+
 ############# REDIS API #########
-SAVE Person Record :
+#SAVE Person Record :
 http://localhost:8080/redis/savePerson?firstName=vikas&lastName=yadav
 
-FETCH All Person Records:
+#FETCH All Person Records:
 http://localhost:8080/redis/getAllPerson
