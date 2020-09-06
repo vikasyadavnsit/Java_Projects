@@ -34,7 +34,7 @@ public class UserWrapper {
 	@Column(name = "create_on", nullable = false)
 	private Timestamp createdOn;
 
-	@OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 	@JoinColumn(name = "user_name")
 	private List<UserRolesWrapper> authorities;
 

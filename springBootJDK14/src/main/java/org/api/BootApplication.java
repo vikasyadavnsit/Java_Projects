@@ -5,11 +5,20 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.data.jdbc.repository.config.EnableJdbcRepositories;
+import org.springframework.retry.annotation.EnableRetry;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 @Configuration
-@SpringBootApplication
+@SpringBootApplication(exclude = { SecurityAutoConfiguration.class })
+@EnableScheduling
+@EnableRetry
+@EnableCaching
+@EnableAspectJAutoProxy
 @EnableJdbcRepositories(basePackageClasses = UserRepository.class)
 public class BootApplication {
 
@@ -21,15 +30,4 @@ public class BootApplication {
 		}
 		SpringApplication.run(BootApplication.class, args);
 	}
-
-// ############### SECURITY SETTINGS FOR ACUTUATOR #####################	
-//	@Configuration
-//	public static class SecurityPermitAllConfig extends WebSecurityConfigurerAdapter {
-//		@Override
-//		protected void configure(HttpSecurity http) throws Exception {
-//			// http.authorizeRequests().anyRequest().permitAll().and().csrf().disable();
-//			http.authorizeRequests().antMatchers("/actuator", "/actuator/**").authenticated().and().formLogin().and()
-//					.httpBasic();
-//		}
-//	}
 }
