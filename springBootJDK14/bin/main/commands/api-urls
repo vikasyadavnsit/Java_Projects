@@ -1,5 +1,17 @@
 
 
+
+############# HATEOS IMPLEMENTATION ###############
+
+#FETCH ALL CUSTOMERS
+http://localhost/hateos/getAllCustomers
+http://localhost/hateos/getCustomer/1
+
+#FETCH ALL RECORDS FOR A ORDER
+http://localhost/hateos/getCustomer/4/getAllOrders
+http://localhost/hateos/getCustomer/4/getOrder/2
+
+
 ############# CONCURRENCY IMPLEMENTATION ###########
 #Root URL ( Sub URL endpoints can be find int the class file )
 http:localhost:8080/concurrency
