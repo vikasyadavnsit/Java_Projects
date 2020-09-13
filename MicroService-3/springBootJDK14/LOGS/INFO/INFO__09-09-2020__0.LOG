@@ -1,0 +1,22 @@
+2020-09-09 00:00:00:002 INFO : Inside SchedulerService : cronJobSchedulerUsingAnnotations() Method
+2020-09-09 00:01:01:539 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-09 00:01:41:534 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-09 00:02:36:162 INFO : Inside CustomBean1 beforeDestruction() Method
+2020-09-09 00:02:36:163 INFO : Inside CustomBean1 Destroy() Method of Disposable Bean
+2020-09-09 00:02:36:163 INFO : Inside CustomBean1 Destroy() Method
+2020-09-09 00:02:36:318 INFO : Starting BootApplication using Java 14 on VIKAS-YADAV with PID 10640 (C:\Users\vicky\Documents\GitHub\Java_Projects\springBootJDK14\bin\main started by vicky in C:\Users\vicky\Documents\GitHub\Java_Projects\springBootJDK14)
+2020-09-09 00:02:36:324 INFO : The following profiles are active: dev
+2020-09-09 00:02:36:929 INFO : BeanPostProcessorsImplementation Instance is Created
+2020-09-09 00:02:37:422 INFO : Beans Ordered is as follows : 1,2,3
+2020-09-09 00:02:37:973 INFO : Bean2 Instantiated at Wed Sep 09 00:02:37 IST 2020
+2020-09-09 00:02:38:925 INFO : Bean1 Instantiated at Wed Sep 09 00:02:38 IST 2020
+2020-09-09 00:02:38:927 INFO : Inside postProcessBeforeInitialization() Method for Bean : customBean1
+2020-09-09 00:02:38:928 INFO : Inside CustomBean1 afterConstruction() Method
+2020-09-09 00:02:38:928 INFO : Inside CustomBean1 afterPropertiesSet() Method 
+2020-09-09 00:02:38:928 INFO : Inside CustomBean1 Init() Method
+2020-09-09 00:02:38:929 INFO : Inside postProcessAfterInitialization() Method for Bean : customBean1
+2020-09-09 00:02:39:776 INFO : Started BootApplication in 3.503 seconds (JVM running for 7326.915)
+2020-09-09 00:02:49:787 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-09 00:03:29:779 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-09 00:19:29:803 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-09 00:20:09:781 INFO : Inside SchedulerService : fixedRate() Method
