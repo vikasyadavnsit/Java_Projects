@@ -1,0 +1,138 @@
+2020-09-15 00:00:00:016 INFO : Inside SchedulerService : cronJobSchedulerUsingAnnotations() Method
+2020-09-15 00:01:25:402 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-15 00:02:05:342 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 00:18:05:408 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-15 00:18:45:333 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 00:31:17:127 INFO : Inside CustomBean1 beforeDestruction() Method
+2020-09-15 00:31:17:129 INFO : Inside CustomBean1 Destroy() Method of Disposable Bean
+2020-09-15 00:31:17:129 INFO : Inside CustomBean1 Destroy() Method
+2020-09-15 00:31:22:094 INFO : Starting BootApplication using Java 14 on VIKAS-YADAV with PID 13160 (C:\Users\vicky\Documents\GitHub\Java_Projects\MicroService-3\springBootJDK14\bin\main started by vicky in C:\Users\vicky\Documents\GitHub\Java_Projects\MicroService-3\springBootJDK14)
+2020-09-15 00:31:22:100 INFO : The following profiles are active: dev
+2020-09-15 00:31:24:072 INFO : BeanPostProcessorsImplementation Instance is Created
+2020-09-15 00:31:26:944 INFO : Beans Ordered is as follows : 1,2,3
+2020-09-15 00:31:28:356 INFO : Bean2 Instantiated at Tue Sep 15 00:31:28 IST 2020
+2020-09-15 00:31:29:259 INFO : Bean1 Instantiated at Tue Sep 15 00:31:29 IST 2020
+2020-09-15 00:31:29:264 INFO : Inside postProcessBeforeInitialization() Method for Bean : customBean1
+2020-09-15 00:31:29:265 INFO : Inside CustomBean1 afterConstruction() Method
+2020-09-15 00:31:29:265 INFO : Inside CustomBean1 afterPropertiesSet() Method 
+2020-09-15 00:31:29:265 INFO : Inside CustomBean1 Init() Method
+2020-09-15 00:31:29:267 INFO : Inside postProcessAfterInitialization() Method for Bean : customBean1
+2020-09-15 00:31:41:639 INFO : Started BootApplication in 20.959 seconds (JVM running for 98480.214)
+2020-09-15 00:31:51:641 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-15 00:32:10:090 INFO : The following profiles are active: dev
+2020-09-15 00:32:11:969 INFO : BeanPostProcessorsImplementation Instance is Created
+2020-09-15 00:32:15:158 INFO : Beans Ordered is as follows : 1,2,3
+2020-09-15 00:33:04:744 INFO : The following profiles are active: dev
+2020-09-15 00:33:06:959 INFO : BeanPostProcessorsImplementation Instance is Created
+2020-09-15 00:33:10:763 INFO : Beans Ordered is as follows : 1,2,3
+2020-09-15 00:33:12:039 INFO : Bean2 Instantiated at Tue Sep 15 00:33:12 IST 2020
+2020-09-15 00:33:12:126 INFO : Bean1 Instantiated at Tue Sep 15 00:33:12 IST 2020
+2020-09-15 00:33:12:132 INFO : Inside postProcessBeforeInitialization() Method for Bean : customBean1
+2020-09-15 00:33:12:132 INFO : Inside CustomBean1 afterConstruction() Method
+2020-09-15 00:33:12:133 INFO : Inside CustomBean1 afterPropertiesSet() Method 
+2020-09-15 00:33:12:133 INFO : Inside CustomBean1 Init() Method
+2020-09-15 00:33:12:136 INFO : Inside postProcessAfterInitialization() Method for Bean : customBean1
+2020-09-15 00:33:18:528 INFO : Inside CustomBean1 beforeDestruction() Method
+2020-09-15 00:33:18:529 INFO : Inside CustomBean1 Destroy() Method of Disposable Bean
+2020-09-15 00:33:18:529 INFO : Inside CustomBean1 Destroy() Method
+2020-09-15 00:33:20:876 INFO : The following profiles are active: dev
+2020-09-15 00:33:22:558 INFO : BeanPostProcessorsImplementation Instance is Created
+2020-09-15 00:33:24:958 INFO : Beans Ordered is as follows : 1,2,3
+2020-09-15 00:33:26:589 INFO : Bean2 Instantiated at Tue Sep 15 00:33:26 IST 2020
+2020-09-15 00:33:27:308 INFO : Bean1 Instantiated at Tue Sep 15 00:33:27 IST 2020
+2020-09-15 00:33:27:317 INFO : Inside postProcessBeforeInitialization() Method for Bean : customBean1
+2020-09-15 00:33:27:318 INFO : Inside CustomBean1 afterConstruction() Method
+2020-09-15 00:33:27:318 INFO : Inside CustomBean1 afterPropertiesSet() Method 
+2020-09-15 00:33:27:319 INFO : Inside CustomBean1 Init() Method
+2020-09-15 00:33:27:323 INFO : Inside postProcessAfterInitialization() Method for Bean : customBean1
+2020-09-15 00:33:39:000 INFO : Started BootApplication in 20.787 seconds (JVM running for 39.133)
+2020-09-15 00:33:49:004 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-15 00:34:29:005 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 00:50:29:016 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-15 00:51:08:996 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 01:07:09:023 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-15 01:07:49:000 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:925 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:925 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-15 20:15:00:926 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:927 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:928 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:929 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:929 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:930 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:931 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:931 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:932 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:932 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:932 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:934 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:934 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:935 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:936 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:936 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:937 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:937 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:938 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:938 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:938 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:939 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:939 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:939 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:940 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:940 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:940 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:941 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:942 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:942 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:942 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:943 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:943 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:944 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:945 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:945 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:945 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:945 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:946 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:946 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:946 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:947 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:947 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:947 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:948 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:949 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:949 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:950 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:950 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:950 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:951 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:951 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:952 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:952 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:952 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:953 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:953 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:953 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:953 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:954 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:954 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:954 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:955 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:955 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:955 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:956 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:15:00:956 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:17:49:000 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:31:40:927 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-15 20:34:28:988 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 20:48:20:938 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-15 20:51:08:994 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 21:05:00:948 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-15 21:07:48:995 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 21:21:40:960 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-15 21:24:28:996 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 21:38:20:964 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-15 21:41:08:994 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 21:55:00:968 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-15 21:57:48:995 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-15 22:11:40:977 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-15 22:14:28:996 INFO : Inside SchedulerService : fixedRate() Method
