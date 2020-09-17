@@ -386,3 +386,12 @@
 2020-09-17 19:17:39:549 INFO : Inside SchedulerService : fixedRate() Method
 2020-09-17 19:33:39:567 INFO : Inside SchedulerService : fixedDelay() Method
 2020-09-17 19:34:19:548 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-17 19:50:19:575 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-17 19:50:59:561 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-17 20:06:59:584 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-17 20:07:39:561 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-17 20:23:39:590 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-17 20:24:19:559 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-17 20:40:19:604 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-17 20:40:59:561 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-17 20:56:59:607 INFO : Inside SchedulerService : fixedDelay() Method
