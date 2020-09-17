@@ -27,6 +27,11 @@ http://localhost:8081/external-configuration/application-properties
 ###MovideDB URL
 https://api.themoviedb.org/3/movie/550?api_key=794ce98ff01aadbf16396eeb99c9a91d
 
+##Spring Cloud Server Config url
+#http://localhost:8888/<file-name without extension>/<profile>
+http://localhost:8888/application/default
+
+
 ############# HATEOS IMPLEMENTATION ###############
 
 #FETCH ALL CUSTOMERS
