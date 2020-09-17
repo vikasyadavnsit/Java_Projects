@@ -25,19 +25,21 @@ public class SchedulerService {
 		log.info("Inside SchedulerService : fixedRate() Method");
 	}
 
+	
+	//Important : L  and @hourly requires Higher Spring Boot version
 	// The cron will run in every 5 second interveral in the first 5 minutes from 12
 	// noon to 11:00pm on every last 5th day of the month
 	// FORMAT: <second> <minute> <hour> <day-of-month> <month> <day-of-week> <year>
 	// <command>
-	@Scheduled(cron = "0/5 1-5 12-23 L-5 * *", zone = "GMT+5.30")
-	public void cronJobScheduler() {
-		log.info("Inside SchedulerService : cronJobScheduler() Method");
-	}
+//	@Scheduled(cron = "0/5 1-5 12-23 L-5 * *", zone = "GMT+5.30")
+//	public void cronJobScheduler() {
+//		log.info("Inside SchedulerService : cronJobScheduler() Method");
+//	}
 
 	// Spring cron Special Expressions
-	@Scheduled(cron = "@hourly")
-	public void cronJobSchedulerUsingAnnotations() {
-		log.info("Inside SchedulerService : cronJobSchedulerUsingAnnotations() Method");
-	}
+//	@Scheduled(cron = "@hourly")
+//	public void cronJobSchedulerUsingAnnotations() {
+//		log.info("Inside SchedulerService : cronJobSchedulerUsingAnnotations() Method");
+//	}
 
 }

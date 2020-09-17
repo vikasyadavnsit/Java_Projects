@@ -1,10 +1,30 @@
 package org.api.test;
 
-import java.util.function.Function;
-import java.util.function.Predicate;
+class A {
 
-class Main {
-	public static void main(String[] args) {
-		//Function<T, R>
+	A() {
+		this(20);
+		System.out.println("Inside A Default Constructoor");
 	}
+
+	A(int a) {
+		System.out.println("Inside A Paramaterized Constructoor");
+	}
+
+}
+
+class B extends A {
+	B() {
+		System.out.println("Inside B Default Constructoor");
+	}
+
+	B(int a) {
+		this();
+		System.out.println("Inside B Paramaterized Constructoor");
+	}
+
+	public static void main(String[] args) {
+		new B(2);
+	}
+
 }

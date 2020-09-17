@@ -29,15 +29,15 @@ public class SchedulerService {
 	// noon to 11:00pm on every last 5th day of the month
 	// FORMAT: <second> <minute> <hour> <day-of-month> <month> <day-of-week> <year>
 	// <command>
-	@Scheduled(cron = "0/5 1-5 12-23 L-5 * *", zone = "GMT+5.30")
-	public void cronJobScheduler() {
-		log.info("Inside SchedulerService : cronJobScheduler() Method");
-	}
+//	@Scheduled(cron = "0/5 1-5 12-23 L-5 * *", zone = "GMT+5.30")
+//	public void cronJobScheduler() {
+//		log.info("Inside SchedulerService : cronJobScheduler() Method");
+//	}
 
 	// Spring cron Special Expressions
-	@Scheduled(cron = "@hourly")
-	public void cronJobSchedulerUsingAnnotations() {
-		log.info("Inside SchedulerService : cronJobSchedulerUsingAnnotations() Method");
-	}
+//	@Scheduled(cron = "@hourly")
+//	public void cronJobSchedulerUsingAnnotations() {
+//		log.info("Inside SchedulerService : cronJobSchedulerUsingAnnotations() Method");
+//	}
 
 }

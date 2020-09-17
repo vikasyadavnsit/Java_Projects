@@ -14,9 +14,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class RatingDataResourceController {
 
 	@RequestMapping("/users/{userId}")
-	public UserRating getUserRating(@PathVariable String userId) {
+	public UserRating getUserRating(@PathVariable String userId) throws InterruptedException {
+		//Thread.sleep(4000);
 		UserRating userRating = new UserRating();
-		userRating.setUserRating(Arrays.asList(new Rating("1234", 4), new Rating("5678", 3)));
+		userRating.setUserRating(
+				Arrays.asList(new Rating(userId, 4), new Rating(String.valueOf(50 + Integer.parseInt(userId)), 3)));
 		return userRating;
 	}
 
