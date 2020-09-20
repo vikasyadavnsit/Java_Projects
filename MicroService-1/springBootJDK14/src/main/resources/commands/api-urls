@@ -1,3 +1,30 @@
+############ Transaction Mangagement JDBC and JTA #############
+#Revert Transaction
+http://localhost:8081/transaction-management/revert-transaction-jdbc
+
+#Rollback Transaction using platfrom manager
+http://localhost:8081/transaction-management/rollback-transaction-jdbc
+
+#Fetch Transaction
+http://localhost:8081/transaction-management/fetch-transaction-jdbc
+
+#Delete Transaction - DELTE MAPPING
+http://localhost:8081/transaction-management/delete-transaction-jdbc
+
+#BATCH INSERT
+http://localhost:8081/transaction-management/batch-insert-transaction-jdbc/30
+
+
+########## Web Sockets #############
+
+#Web Socket UI
+http://localhost:8081/websocket/ui
+
+
+########### API CONTROLLER #################
+
+#Dynamic Response Status
+http://localhost:8081/api/err/300
 
 
 ############ ACTUATOR ENDPONIT #############
@@ -7,7 +34,12 @@ http://localhost:8081/actuator
 #Configuration URL
 http://localhost:8081/actuator/configprops
 
+#Refresh Dynamic Configuration
+http://localhost:8081/actuator/refresh
+
 ############ MICROSERVICES URL ##############
+#enable the eureak client registery and cloud config through application.properties
+
 #Movie Catalog Serice URL (Front Service URL) - Microservice1
 http://localhost:8081/catalog/30
 

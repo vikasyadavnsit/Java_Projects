@@ -1,5 +1,7 @@
 package org.api.wrapper.generic;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,7 +11,9 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "user_roles")
-public class UserRolesWrapper {
+public class UserRolesWrapper implements Serializable {
+
+	private static final long serialVersionUID = 5787844566566770981L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
