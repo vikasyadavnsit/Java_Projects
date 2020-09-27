@@ -21,7 +21,7 @@ ext {
 dependencies {
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
-     
+         
     compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.10.2'
     compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.10.2'
 	compile group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-xml', version: '2.10.1'
@@ -51,7 +51,8 @@ dependencies {
 	implementation 'org.webjars:bootstrap:3.3.7'
 	implementation 'org.webjars:jquery:3.1.1-1'
 	
-	
+    runtimeOnly 'com.h2database:h2'
+		
 	implementation 'org.springframework.cloud:spring-cloud-starter-config'
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'org.springframework.cloud:spring-cloud-starter-netflix-hystrix-dashboard'

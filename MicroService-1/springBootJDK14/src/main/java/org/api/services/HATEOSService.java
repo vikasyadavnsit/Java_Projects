@@ -21,7 +21,6 @@ public class HATEOSService {
 	private void construct() {
 		customers = new ArrayList<>();
 		IntStream.range(1, 5).forEach(x -> {
-			new CustomerWrapper();
 			customers.add(CustomerWrapper.builder().customerID(x).age(new Date()).name("Customer-" + x)
 					.orders(new ArrayList<>()).build());
 		});
