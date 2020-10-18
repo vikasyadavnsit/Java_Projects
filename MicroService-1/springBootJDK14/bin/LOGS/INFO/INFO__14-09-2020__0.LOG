@@ -1,0 +1,234 @@
+2020-09-14 00:00:00:010 INFO : Inside SchedulerService : cronJobSchedulerUsingAnnotations() Method
+2020-09-14 00:00:22:821 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-14 19:33:44:827 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:827 INFO : Inside SchedulerService : cronJobSchedulerUsingAnnotations() Method
+2020-09-14 19:33:44:827 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-14 19:33:44:827 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:828 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:828 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:828 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:828 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:829 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:829 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:829 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:830 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:830 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:830 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:830 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:830 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:830 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:830 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:830 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:831 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:831 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:831 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:831 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:831 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:831 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:831 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:831 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:831 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:831 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:831 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:831 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:831 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:831 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:832 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:832 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:832 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:832 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:832 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:832 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:832 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:832 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:832 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:832 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:832 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:832 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:832 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:832 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:832 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:832 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:832 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:833 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:833 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:833 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:833 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:833 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:833 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:833 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:833 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:833 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:833 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:833 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:833 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:833 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:833 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:834 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:834 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:834 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:834 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:834 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:834 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:834 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:834 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:33:44:834 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:46:26:555 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 19:50:24:829 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-14 20:00:00:008 INFO : Inside SchedulerService : cronJobSchedulerUsingAnnotations() Method
+2020-09-14 20:03:06:555 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 20:07:04:837 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-14 20:19:46:556 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 20:23:44:849 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-14 20:36:26:546 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 20:40:24:864 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-14 20:53:06:544 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 20:57:04:878 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-14 21:00:00:012 INFO : Inside SchedulerService : cronJobSchedulerUsingAnnotations() Method
+2020-09-14 21:00:16:885 INFO : Inside CustomBean1 beforeDestruction() Method
+2020-09-14 21:00:16:886 INFO : Inside CustomBean1 Destroy() Method of Disposable Bean
+2020-09-14 21:00:16:886 INFO : Inside CustomBean1 Destroy() Method
+2020-09-14 21:00:20:209 INFO : Starting BootApplication using Java 14 on VIKAS-YADAV with PID 12964 (C:\Users\vicky\Documents\GitHub\Java_Projects\MicroService-1\springBootJDK14\bin\main started by vicky in C:\Users\vicky\Documents\GitHub\Java_Projects\MicroService-1\springBootJDK14)
+2020-09-14 21:00:20:211 INFO : The following profiles are active: dev
+2020-09-14 21:00:21:115 INFO : BeanPostProcessorsImplementation Instance is Created
+2020-09-14 21:00:22:240 INFO : Beans Ordered is as follows : 1,2,3
+2020-09-14 21:00:46:968 INFO : Starting BootApplication using Java 14 on VIKAS-YADAV with PID 12964 (C:\Users\vicky\Documents\GitHub\Java_Projects\MicroService-1\springBootJDK14\bin\main started by vicky in C:\Users\vicky\Documents\GitHub\Java_Projects\MicroService-1\springBootJDK14)
+2020-09-14 21:00:46:968 INFO : The following profiles are active: dev
+2020-09-14 21:00:47:796 INFO : BeanPostProcessorsImplementation Instance is Created
+2020-09-14 21:00:48:973 INFO : Beans Ordered is as follows : 1,2,3
+2020-09-14 21:00:49:699 INFO : Bean2 Instantiated at Mon Sep 14 21:00:49 IST 2020
+2020-09-14 21:00:50:387 INFO : Bean1 Instantiated at Mon Sep 14 21:00:50 IST 2020
+2020-09-14 21:00:50:395 INFO : Inside postProcessBeforeInitialization() Method for Bean : customBean1
+2020-09-14 21:00:50:396 INFO : Inside CustomBean1 afterConstruction() Method
+2020-09-14 21:00:50:396 INFO : Inside CustomBean1 afterPropertiesSet() Method 
+2020-09-14 21:00:50:397 INFO : Inside CustomBean1 Init() Method
+2020-09-14 21:00:50:400 INFO : Inside postProcessAfterInitialization() Method for Bean : customBean1
+2020-09-14 21:00:51:967 INFO : Started BootApplication in 5.187 seconds (JVM running for 85738.575)
+2020-09-14 21:01:01:977 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-14 21:01:41:971 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 21:08:13:160 INFO : Inside CustomBean1 beforeDestruction() Method
+2020-09-14 21:08:13:160 INFO : Inside CustomBean1 Destroy() Method of Disposable Bean
+2020-09-14 21:08:13:161 INFO : Inside CustomBean1 Destroy() Method
+2020-09-14 21:08:16:464 INFO : Starting BootApplication using Java 14 on VIKAS-YADAV with PID 12964 (C:\Users\vicky\Documents\GitHub\Java_Projects\MicroService-1\springBootJDK14\bin\main started by vicky in C:\Users\vicky\Documents\GitHub\Java_Projects\MicroService-1\springBootJDK14)
+2020-09-14 21:08:16:464 INFO : The following profiles are active: dev
+2020-09-14 21:08:17:239 INFO : BeanPostProcessorsImplementation Instance is Created
+2020-09-14 21:08:18:314 INFO : Beans Ordered is as follows : 1,2,3
+2020-09-14 21:08:19:168 INFO : Bean2 Instantiated at Mon Sep 14 21:08:19 IST 2020
+2020-09-14 21:08:19:259 INFO : Bean1 Instantiated at Mon Sep 14 21:08:19 IST 2020
+2020-09-14 21:08:19:261 INFO : Inside postProcessBeforeInitialization() Method for Bean : customBean1
+2020-09-14 21:08:19:261 INFO : Inside CustomBean1 afterConstruction() Method
+2020-09-14 21:08:19:262 INFO : Inside CustomBean1 afterPropertiesSet() Method 
+2020-09-14 21:08:19:262 INFO : Inside CustomBean1 Init() Method
+2020-09-14 21:08:19:263 INFO : Inside postProcessAfterInitialization() Method for Bean : customBean1
+2020-09-14 21:08:21:010 INFO : Started BootApplication in 4.709 seconds (JVM running for 86187.619)
+2020-09-14 21:08:31:019 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-14 21:09:11:016 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 21:11:21:881 INFO : Starting BootApplication using Java 14 on VIKAS-YADAV with PID 17132 (C:\Users\vicky\Documents\GitHub\Java_Projects\MicroService-1\springBootJDK14\bin\main started by vicky in C:\Users\vicky\Documents\GitHub\Java_Projects\MicroService-1\springBootJDK14)
+2020-09-14 21:11:21:883 INFO : The following profiles are active: dev
+2020-09-14 21:11:24:320 INFO : BeanPostProcessorsImplementation Instance is Created
+2020-09-14 21:11:27:409 INFO : Beans Ordered is as follows : 1,2,3
+2020-09-14 21:11:28:719 INFO : Bean2 Instantiated at Mon Sep 14 21:11:28 IST 2020
+2020-09-14 21:11:28:885 INFO : Bean1 Instantiated at Mon Sep 14 21:11:28 IST 2020
+2020-09-14 21:11:28:888 INFO : Inside postProcessBeforeInitialization() Method for Bean : customBean1
+2020-09-14 21:11:28:888 INFO : Inside CustomBean1 afterConstruction() Method
+2020-09-14 21:11:28:889 INFO : Inside CustomBean1 afterPropertiesSet() Method 
+2020-09-14 21:11:28:889 INFO : Inside CustomBean1 Init() Method
+2020-09-14 21:11:28:890 INFO : Inside postProcessAfterInitialization() Method for Bean : customBean1
+2020-09-14 21:11:31:409 INFO : Started BootApplication in 10.207 seconds (JVM running for 11.167)
+2020-09-14 21:11:41:418 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-14 21:12:21:413 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 21:13:14:718 INFO : Starting BootApplication using Java 14 on VIKAS-YADAV with PID 10760 (C:\Users\vicky\Documents\GitHub\Java_Projects\MicroService-1\springBootJDK14\bin\main started by vicky in C:\Users\vicky\Documents\GitHub\Java_Projects\MicroService-1\springBootJDK14)
+2020-09-14 21:13:14:720 INFO : The following profiles are active: dev
+2020-09-14 21:13:16:787 INFO : BeanPostProcessorsImplementation Instance is Created
+2020-09-14 21:13:19:877 INFO : Beans Ordered is as follows : 1,2,3
+2020-09-14 21:13:21:039 INFO : Bean2 Instantiated at Mon Sep 14 21:13:21 IST 2020
+2020-09-14 21:13:21:191 INFO : Bean1 Instantiated at Mon Sep 14 21:13:21 IST 2020
+2020-09-14 21:13:21:197 INFO : Inside postProcessBeforeInitialization() Method for Bean : customBean1
+2020-09-14 21:13:21:197 INFO : Inside CustomBean1 afterConstruction() Method
+2020-09-14 21:13:21:197 INFO : Inside CustomBean1 afterPropertiesSet() Method 
+2020-09-14 21:13:21:197 INFO : Inside CustomBean1 Init() Method
+2020-09-14 21:13:21:198 INFO : Inside postProcessAfterInitialization() Method for Bean : customBean1
+2020-09-14 21:13:23:752 INFO : Started BootApplication in 9.647 seconds (JVM running for 10.534)
+2020-09-14 21:13:33:759 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-14 21:14:13:752 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 21:16:03:606 INFO : Inside CustomBean1 beforeDestruction() Method
+2020-09-14 21:16:03:607 INFO : Inside CustomBean1 Destroy() Method of Disposable Bean
+2020-09-14 21:16:03:607 INFO : Inside CustomBean1 Destroy() Method
+2020-09-14 21:16:06:925 INFO : Starting BootApplication using Java 14 on VIKAS-YADAV with PID 10760 (C:\Users\vicky\Documents\GitHub\Java_Projects\MicroService-1\springBootJDK14\bin\main started by vicky in C:\Users\vicky\Documents\GitHub\Java_Projects\MicroService-1\springBootJDK14)
+2020-09-14 21:16:06:925 INFO : The following profiles are active: dev
+2020-09-14 21:16:07:642 INFO : BeanPostProcessorsImplementation Instance is Created
+2020-09-14 21:16:08:714 INFO : Beans Ordered is as follows : 1,2,3
+2020-09-14 21:16:09:652 INFO : Bean2 Instantiated at Mon Sep 14 21:16:09 IST 2020
+2020-09-14 21:16:10:217 INFO : Bean1 Instantiated at Mon Sep 14 21:16:10 IST 2020
+2020-09-14 21:16:10:225 INFO : Inside postProcessBeforeInitialization() Method for Bean : customBean1
+2020-09-14 21:16:10:226 INFO : Inside CustomBean1 afterConstruction() Method
+2020-09-14 21:16:10:227 INFO : Inside CustomBean1 afterPropertiesSet() Method 
+2020-09-14 21:16:10:228 INFO : Inside CustomBean1 Init() Method
+2020-09-14 21:16:10:230 INFO : Inside postProcessAfterInitialization() Method for Bean : customBean1
+2020-09-14 21:16:12:080 INFO : Started BootApplication in 5.338 seconds (JVM running for 178.861)
+2020-09-14 21:16:22:092 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-14 21:17:02:080 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 21:24:00:343 INFO : Starting BootApplication using Java 14 on VIKAS-YADAV with PID 13804 (C:\Users\vicky\Documents\GitHub\Java_Projects\MicroService-1\springBootJDK14\bin\main started by vicky in C:\Users\vicky\Documents\GitHub\Java_Projects\MicroService-1\springBootJDK14)
+2020-09-14 21:24:00:345 INFO : The following profiles are active: dev
+2020-09-14 21:24:02:330 INFO : BeanPostProcessorsImplementation Instance is Created
+2020-09-14 21:24:05:330 INFO : Beans Ordered is as follows : 1,2,3
+2020-09-14 21:24:06:527 INFO : Bean2 Instantiated at Mon Sep 14 21:24:06 IST 2020
+2020-09-14 21:24:06:720 INFO : Bean1 Instantiated at Mon Sep 14 21:24:06 IST 2020
+2020-09-14 21:24:06:723 INFO : Inside postProcessBeforeInitialization() Method for Bean : customBean1
+2020-09-14 21:24:06:724 INFO : Inside CustomBean1 afterConstruction() Method
+2020-09-14 21:24:06:724 INFO : Inside CustomBean1 afterPropertiesSet() Method 
+2020-09-14 21:24:06:724 INFO : Inside CustomBean1 Init() Method
+2020-09-14 21:24:06:725 INFO : Inside postProcessAfterInitialization() Method for Bean : customBean1
+2020-09-14 21:24:09:272 INFO : Started BootApplication in 9.548 seconds (JVM running for 10.431)
+2020-09-14 21:24:19:279 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-14 21:24:59:271 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 21:40:59:283 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-14 21:41:39:280 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 21:56:47:413 INFO : Inside CustomBean1 beforeDestruction() Method
+2020-09-14 21:56:47:413 INFO : Inside CustomBean1 Destroy() Method of Disposable Bean
+2020-09-14 21:56:47:414 INFO : Inside CustomBean1 Destroy() Method
+2020-09-14 21:56:51:772 INFO : Starting BootApplication using Java 14 on VIKAS-YADAV with PID 13804 (C:\Users\vicky\Documents\GitHub\Java_Projects\MicroService-1\springBootJDK14\bin\main started by vicky in C:\Users\vicky\Documents\GitHub\Java_Projects\MicroService-1\springBootJDK14)
+2020-09-14 21:56:51:774 INFO : The following profiles are active: dev
+2020-09-14 21:56:52:637 INFO : BeanPostProcessorsImplementation Instance is Created
+2020-09-14 21:56:53:771 INFO : Beans Ordered is as follows : 1,2,3
+2020-09-14 21:56:55:758 INFO : Bean2 Instantiated at Mon Sep 14 21:56:55 IST 2020
+2020-09-14 21:56:56:352 INFO : Bean1 Instantiated at Mon Sep 14 21:56:56 IST 2020
+2020-09-14 21:56:56:361 INFO : Inside postProcessBeforeInitialization() Method for Bean : customBean1
+2020-09-14 21:56:56:362 INFO : Inside CustomBean1 afterConstruction() Method
+2020-09-14 21:56:56:362 INFO : Inside CustomBean1 afterPropertiesSet() Method 
+2020-09-14 21:56:56:363 INFO : Inside CustomBean1 Init() Method
+2020-09-14 21:56:56:365 INFO : Inside postProcessAfterInitialization() Method for Bean : customBean1
+2020-09-14 21:57:02:943 INFO : Started BootApplication in 12.384 seconds (JVM running for 1984.102)
+2020-09-14 21:57:12:948 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-14 21:57:52:944 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 22:00:00:012 INFO : Inside SchedulerService : cronJobSchedulerUsingAnnotations() Method
+2020-09-14 22:03:57:977 INFO : Inside CustomBean1 beforeDestruction() Method
+2020-09-14 22:03:57:977 INFO : Inside CustomBean1 Destroy() Method of Disposable Bean
+2020-09-14 22:03:57:978 INFO : Inside CustomBean1 Destroy() Method
+2020-09-14 22:04:01:291 INFO : Starting BootApplication using Java 14 on VIKAS-YADAV with PID 13804 (C:\Users\vicky\Documents\GitHub\Java_Projects\MicroService-1\springBootJDK14\bin\main started by vicky in C:\Users\vicky\Documents\GitHub\Java_Projects\MicroService-1\springBootJDK14)
+2020-09-14 22:04:01:291 INFO : The following profiles are active: dev
+2020-09-14 22:04:02:006 INFO : BeanPostProcessorsImplementation Instance is Created
+2020-09-14 22:04:02:949 INFO : Beans Ordered is as follows : 1,2,3
+2020-09-14 22:04:03:762 INFO : Bean2 Instantiated at Mon Sep 14 22:04:03 IST 2020
+2020-09-14 22:04:04:253 INFO : Bean1 Instantiated at Mon Sep 14 22:04:04 IST 2020
+2020-09-14 22:04:04:255 INFO : Inside postProcessBeforeInitialization() Method for Bean : customBean1
+2020-09-14 22:04:04:255 INFO : Inside CustomBean1 afterConstruction() Method
+2020-09-14 22:04:04:256 INFO : Inside CustomBean1 afterPropertiesSet() Method 
+2020-09-14 22:04:04:256 INFO : Inside CustomBean1 Init() Method
+2020-09-14 22:04:04:257 INFO : Inside postProcessAfterInitialization() Method for Bean : customBean1
+2020-09-14 22:04:05:892 INFO : Started BootApplication in 4.782 seconds (JVM running for 2407.05)
+2020-09-14 22:04:15:897 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-14 22:04:55:897 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 22:20:55:903 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-14 22:21:35:905 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 22:37:35:913 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-14 22:38:15:892 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 22:54:15:916 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-14 22:54:55:891 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 23:00:00:002 INFO : Inside SchedulerService : cronJobSchedulerUsingAnnotations() Method
+2020-09-14 23:10:55:930 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-14 23:11:35:895 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 23:27:35:944 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-14 23:28:15:891 INFO : Inside SchedulerService : fixedRate() Method
+2020-09-14 23:44:15:960 INFO : Inside SchedulerService : fixedDelay() Method
+2020-09-14 23:44:55:893 INFO : Inside SchedulerService : fixedRate() Method
