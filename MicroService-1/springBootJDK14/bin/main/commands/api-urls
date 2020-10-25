@@ -91,3 +91,9 @@ http://localhost:8080/redis/savePerson?firstName=vikas&lastName=yadav
 
 #FETCH All Person Records:
 http://localhost:8080/redis/getAllPerson
+
+
+
+################### H2 DATABASE URL ##################
+#Console URL
+http://localhost:8081/h2-console
