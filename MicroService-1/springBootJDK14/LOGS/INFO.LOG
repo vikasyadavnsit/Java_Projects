@@ -261,3 +261,19 @@
 2020-10-25 11:15:09:697 INFO : Started BootApplication in 15.406 seconds (JVM running for 1349.485)
 2020-10-25 11:15:19:702 INFO : Inside SchedulerService : fixedDelay() Method
 2020-10-25 11:15:59:700 INFO : Inside SchedulerService : fixedRate() Method
+2020-10-25 11:22:21:659 INFO : Inside CustomBean1 beforeDestruction() Method
+2020-10-25 11:22:21:659 INFO : Inside CustomBean1 Destroy() Method of Disposable Bean
+2020-10-25 11:22:21:659 INFO : Inside CustomBean1 Destroy() Method
+2020-10-25 11:22:26:330 INFO : The following profiles are active: dev
+2020-10-25 11:22:27:416 INFO : BeanPostProcessorsImplementation Instance is Created
+2020-10-25 11:22:28:901 INFO : Beans Ordered is as follows : 1,2,3
+2020-10-25 11:22:29:656 INFO : Bean2 Instantiated at Sun Oct 25 11:22:29 IST 2020
+2020-10-25 11:22:29:909 INFO : Bean1 Instantiated at Sun Oct 25 11:22:29 IST 2020
+2020-10-25 11:22:29:912 INFO : Inside postProcessBeforeInitialization() Method for Bean : customBean1
+2020-10-25 11:22:29:912 INFO : Inside CustomBean1 afterConstruction() Method
+2020-10-25 11:22:29:912 INFO : Inside CustomBean1 afterPropertiesSet() Method 
+2020-10-25 11:22:29:913 INFO : Inside CustomBean1 Init() Method
+2020-10-25 11:22:29:914 INFO : Inside postProcessAfterInitialization() Method for Bean : customBean1
+2020-10-25 11:22:37:350 INFO : Started BootApplication in 15.516 seconds (JVM running for 1797.139)
+2020-10-25 11:22:47:359 INFO : Inside SchedulerService : fixedDelay() Method
+2020-10-25 11:23:27:364 INFO : Inside SchedulerService : fixedRate() Method
