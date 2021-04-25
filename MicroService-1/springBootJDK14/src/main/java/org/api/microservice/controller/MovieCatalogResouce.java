@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+
 //Movie Catalog MicroService
 @RestController
 @RequestMapping("/catalog")
@@ -29,7 +31,7 @@ public class MovieCatalogResouce {
 //	private WebClient.Builder webClientBuilder;
 
 	@RequestMapping("/{userId}")
-	// @HystrixCommand(fallbackMethod = "getFallbackCatalog")
+	@HystrixCommand(fallbackMethod = "getFallbackCatalog")
 	public List<CatalogItem> getCatalog(@PathVariable String userId) {
 
 //		Movie movie = webClientBuilder.build().get().uri("http://localhost:8082/movies/" + rating.getMovieId())

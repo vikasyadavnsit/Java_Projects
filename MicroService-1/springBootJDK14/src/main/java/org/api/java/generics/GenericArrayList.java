@@ -14,12 +14,10 @@ public class GenericArrayList<U> implements GenericList<U> {
 		switch (a.length) {
 		case 2:
 			if (a[1] < 1)
-				a[1] = 75;
-			this.loadFactor = a[1];
+				this.loadFactor = a[1];
 		case 1:
 			if (a[0] < 1)
-				a[0] = 16;
-			this.size = a[0];
+				this.size = a[0];
 			break;
 		default:
 			this.loadFactor = 75;

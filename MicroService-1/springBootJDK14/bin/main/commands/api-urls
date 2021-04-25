@@ -77,7 +77,7 @@ http://localhost/hateos/getCustomer/4/getOrder/2
 
 ############# CONCURRENCY IMPLEMENTATION ###########
 #Root URL ( Sub URL endpoints can be find int the class file )
-http:localhost:8080/concurrency
+http://localhost:8080/concurrency
 
 
 ############# OAUTH IMPLEMENTATION ############

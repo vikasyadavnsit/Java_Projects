@@ -277,3 +277,158 @@
 2020-10-25 11:22:37:350 INFO : Started BootApplication in 15.516 seconds (JVM running for 1797.139)
 2020-10-25 11:22:47:359 INFO : Inside SchedulerService : fixedDelay() Method
 2020-10-25 11:23:27:364 INFO : Inside SchedulerService : fixedRate() Method
+2020-11-14 23:10:10:152 INFO : The following profiles are active: dev
+2020-11-14 23:10:12:509 INFO : BeanPostProcessorsImplementation Instance is Created
+2020-11-14 23:10:16:110 INFO : Beans Ordered is as follows : 1,2,3
+2020-11-14 23:10:17:450 INFO : Bean2 Instantiated at Sat Nov 14 23:10:17 IST 2020
+2020-11-14 23:10:17:504 INFO : Bean1 Instantiated at Sat Nov 14 23:10:17 IST 2020
+2020-11-14 23:10:17:507 INFO : Inside postProcessBeforeInitialization() Method for Bean : customBean1
+2020-11-14 23:10:17:508 INFO : Inside CustomBean1 afterConstruction() Method
+2020-11-14 23:10:17:508 INFO : Inside CustomBean1 afterPropertiesSet() Method 
+2020-11-14 23:10:17:508 INFO : Inside CustomBean1 Init() Method
+2020-11-14 23:10:17:511 INFO : Inside postProcessAfterInitialization() Method for Bean : customBean1
+2020-11-14 23:10:25:668 INFO : Started BootApplication in 21.009 seconds (JVM running for 22.231)
+2020-11-14 23:10:35:673 INFO : Inside SchedulerService : fixedDelay() Method
+2020-11-14 23:11:15:665 INFO : Inside SchedulerService : fixedRate() Method
+2020-11-14 23:17:17:653 INFO : New User Attempting to connect.
+2020-11-14 23:17:17:656 INFO : New User connection established
+2020-11-14 23:17:23:107 INFO : Connection Disconnected For : 5qlu15xf
+2021-03-14 15:17:36:521 INFO : The following profiles are active: dev
+2021-03-14 15:17:39:727 INFO : BeanPostProcessorsImplementation Instance is Created
+2021-03-14 15:17:44:546 INFO : Beans Ordered is as follows : 1,2,3
+2021-03-14 15:17:46:132 INFO : Bean2 Instantiated at Sun Mar 14 15:17:46 IST 2021
+2021-03-14 15:17:46:950 INFO : Bean1 Instantiated at Sun Mar 14 15:17:46 IST 2021
+2021-03-14 15:17:46:953 INFO : Inside postProcessBeforeInitialization() Method for Bean : customBean1
+2021-03-14 15:17:46:954 INFO : Inside CustomBean1 afterConstruction() Method
+2021-03-14 15:17:46:954 INFO : Inside CustomBean1 afterPropertiesSet() Method 
+2021-03-14 15:17:46:955 INFO : Inside CustomBean1 Init() Method
+2021-03-14 15:17:46:956 INFO : Inside postProcessAfterInitialization() Method for Bean : customBean1
+2021-03-14 15:17:50:715 INFO : Started BootApplication in 18.392 seconds (JVM running for 19.988)
+2021-03-14 15:18:00:713 INFO : Inside SchedulerService : fixedDelay() Method
+2021-03-14 15:18:40:724 INFO : Inside SchedulerService : fixedRate() Method
+2021-03-14 15:34:40:726 INFO : Inside SchedulerService : fixedDelay() Method
+2021-03-14 15:35:20:721 INFO : Inside SchedulerService : fixedRate() Method
+2021-03-14 15:35:58:758 INFO : Inside CustomBean1 beforeDestruction() Method
+2021-03-14 15:35:58:758 INFO : Inside CustomBean1 Destroy() Method of Disposable Bean
+2021-03-14 15:35:58:759 INFO : Inside CustomBean1 Destroy() Method
+2021-03-14 15:36:01:302 INFO : The following profiles are active: dev
+2021-03-14 15:36:02:412 INFO : BeanPostProcessorsImplementation Instance is Created
+2021-03-14 15:36:03:885 INFO : Beans Ordered is as follows : 1,2,3
+2021-03-14 15:36:04:690 INFO : Bean2 Instantiated at Sun Mar 14 15:36:04 IST 2021
+2021-03-14 15:36:05:025 INFO : Bean1 Instantiated at Sun Mar 14 15:36:05 IST 2021
+2021-03-14 15:36:05:028 INFO : Inside postProcessBeforeInitialization() Method for Bean : customBean1
+2021-03-14 15:36:05:028 INFO : Inside CustomBean1 afterConstruction() Method
+2021-03-14 15:36:05:028 INFO : Inside CustomBean1 afterPropertiesSet() Method 
+2021-03-14 15:36:05:029 INFO : Inside CustomBean1 Init() Method
+2021-03-14 15:36:05:030 INFO : Inside postProcessAfterInitialization() Method for Bean : customBean1
+2021-03-14 15:36:07:694 INFO : Started BootApplication in 8.778 seconds (JVM running for 1116.966)
+2021-03-14 15:36:17:704 INFO : Inside SchedulerService : fixedDelay() Method
+2021-03-14 15:36:57:701 INFO : Inside SchedulerService : fixedRate() Method
+2021-03-14 15:37:49:234 INFO : Inside getUserRatings() 
+2021-03-14 15:37:49:519 INFO : Inside getFallbackUserRating() 
+2021-03-14 15:37:49:531 INFO : Inside getCatalogItem() 
+2021-03-14 15:37:49:574 INFO : Inside getFallbackCatalogItem() 
+2021-03-14 15:43:23:481 INFO : Inside CustomBean1 beforeDestruction() Method
+2021-03-14 15:43:23:482 INFO : Inside CustomBean1 Destroy() Method of Disposable Bean
+2021-03-14 15:43:23:482 INFO : Inside CustomBean1 Destroy() Method
+2021-03-14 15:43:26:031 INFO : The following profiles are active: dev
+2021-03-14 15:43:27:161 INFO : BeanPostProcessorsImplementation Instance is Created
+2021-03-14 15:43:28:767 INFO : Beans Ordered is as follows : 1,2,3
+2021-03-14 15:43:29:652 INFO : Bean2 Instantiated at Sun Mar 14 15:43:29 IST 2021
+2021-03-14 15:43:30:279 INFO : Bean1 Instantiated at Sun Mar 14 15:43:30 IST 2021
+2021-03-14 15:43:30:281 INFO : Inside postProcessBeforeInitialization() Method for Bean : customBean1
+2021-03-14 15:43:30:282 INFO : Inside CustomBean1 afterConstruction() Method
+2021-03-14 15:43:30:282 INFO : Inside CustomBean1 afterPropertiesSet() Method 
+2021-03-14 15:43:30:282 INFO : Inside CustomBean1 Init() Method
+2021-03-14 15:43:30:283 INFO : Inside postProcessAfterInitialization() Method for Bean : customBean1
+2021-03-14 15:43:32:911 INFO : Started BootApplication in 9.284 seconds (JVM running for 1562.184)
+2021-03-14 15:43:42:913 INFO : Inside SchedulerService : fixedDelay() Method
+2021-03-14 15:44:19:689 INFO : Inside CustomBean1 beforeDestruction() Method
+2021-03-14 15:44:19:689 INFO : Inside CustomBean1 Destroy() Method of Disposable Bean
+2021-03-14 15:44:19:689 INFO : Inside CustomBean1 Destroy() Method
+2021-03-14 15:44:22:226 INFO : The following profiles are active: dev
+2021-03-14 15:44:23:296 INFO : BeanPostProcessorsImplementation Instance is Created
+2021-03-14 15:44:24:727 INFO : Beans Ordered is as follows : 1,2,3
+2021-03-14 15:44:25:562 INFO : Bean2 Instantiated at Sun Mar 14 15:44:25 IST 2021
+2021-03-14 15:44:25:993 INFO : Bean1 Instantiated at Sun Mar 14 15:44:25 IST 2021
+2021-03-14 15:44:25:996 INFO : Inside postProcessBeforeInitialization() Method for Bean : customBean1
+2021-03-14 15:44:25:996 INFO : Inside CustomBean1 afterConstruction() Method
+2021-03-14 15:44:25:996 INFO : Inside CustomBean1 afterPropertiesSet() Method 
+2021-03-14 15:44:25:997 INFO : Inside CustomBean1 Init() Method
+2021-03-14 15:44:25:998 INFO : Inside postProcessAfterInitialization() Method for Bean : customBean1
+2021-03-14 15:44:28:530 INFO : Started BootApplication in 8.703 seconds (JVM running for 1617.803)
+2021-03-14 15:44:38:529 INFO : Inside SchedulerService : fixedDelay() Method
+2021-03-14 15:45:18:540 INFO : Inside SchedulerService : fixedRate() Method
+2021-03-14 15:45:26:544 INFO : Inside CustomBean1 beforeDestruction() Method
+2021-03-14 15:45:26:545 INFO : Inside CustomBean1 Destroy() Method of Disposable Bean
+2021-03-14 15:45:26:546 INFO : Inside CustomBean1 Destroy() Method
+2021-03-14 15:45:29:092 INFO : The following profiles are active: dev
+2021-03-14 15:45:30:241 INFO : BeanPostProcessorsImplementation Instance is Created
+2021-03-14 15:45:31:773 INFO : Beans Ordered is as follows : 1,2,3
+2021-03-14 15:45:32:864 INFO : Bean2 Instantiated at Sun Mar 14 15:45:32 IST 2021
+2021-03-14 15:45:33:570 INFO : Bean1 Instantiated at Sun Mar 14 15:45:33 IST 2021
+2021-03-14 15:45:33:573 INFO : Inside postProcessBeforeInitialization() Method for Bean : customBean1
+2021-03-14 15:45:33:573 INFO : Inside CustomBean1 afterConstruction() Method
+2021-03-14 15:45:33:573 INFO : Inside CustomBean1 afterPropertiesSet() Method 
+2021-03-14 15:45:33:574 INFO : Inside CustomBean1 Init() Method
+2021-03-14 15:45:33:575 INFO : Inside postProcessAfterInitialization() Method for Bean : customBean1
+2021-03-14 15:45:35:950 INFO : Started BootApplication in 9.245 seconds (JVM running for 1685.222)
+2021-03-14 15:45:45:958 INFO : Inside SchedulerService : fixedDelay() Method
+2021-03-14 15:46:25:950 INFO : Inside SchedulerService : fixedRate() Method
+2021-03-14 15:46:29:221 INFO : Inside CustomBean1 beforeDestruction() Method
+2021-03-14 15:46:29:222 INFO : Inside CustomBean1 Destroy() Method of Disposable Bean
+2021-03-14 15:46:29:222 INFO : Inside CustomBean1 Destroy() Method
+2021-03-14 15:46:31:785 INFO : The following profiles are active: dev
+2021-03-14 15:46:32:911 INFO : BeanPostProcessorsImplementation Instance is Created
+2021-03-14 15:46:34:489 INFO : Beans Ordered is as follows : 1,2,3
+2021-03-14 15:46:35:362 INFO : Bean2 Instantiated at Sun Mar 14 15:46:35 IST 2021
+2021-03-14 15:46:35:898 INFO : Bean1 Instantiated at Sun Mar 14 15:46:35 IST 2021
+2021-03-14 15:46:35:902 INFO : Inside postProcessBeforeInitialization() Method for Bean : customBean1
+2021-03-14 15:46:35:903 INFO : Inside CustomBean1 afterConstruction() Method
+2021-03-14 15:46:35:903 INFO : Inside CustomBean1 afterPropertiesSet() Method 
+2021-03-14 15:46:35:903 INFO : Inside CustomBean1 Init() Method
+2021-03-14 15:46:35:904 INFO : Inside postProcessAfterInitialization() Method for Bean : customBean1
+2021-03-14 15:46:38:488 INFO : Started BootApplication in 9.102 seconds (JVM running for 1747.761)
+2021-03-14 15:46:48:492 INFO : Inside SchedulerService : fixedDelay() Method
+2021-03-14 15:47:28:498 INFO : Inside SchedulerService : fixedRate() Method
+2021-03-14 16:03:28:502 INFO : Inside SchedulerService : fixedDelay() Method
+2021-03-14 16:04:08:503 INFO : Inside SchedulerService : fixedRate() Method
+2021-03-14 16:20:08:509 INFO : Inside SchedulerService : fixedDelay() Method
+2021-03-14 16:20:48:500 INFO : Inside SchedulerService : fixedRate() Method
+2021-03-14 16:36:48:515 INFO : Inside SchedulerService : fixedDelay() Method
+2021-03-14 16:37:28:495 INFO : Inside SchedulerService : fixedRate() Method
+2021-03-14 16:53:28:523 INFO : Inside SchedulerService : fixedDelay() Method
+2021-03-14 16:54:08:501 INFO : Inside SchedulerService : fixedRate() Method
+2021-03-14 17:10:08:524 INFO : Inside SchedulerService : fixedDelay() Method
+2021-03-14 17:10:48:495 INFO : Inside SchedulerService : fixedRate() Method
+2021-03-14 17:26:48:525 INFO : Inside SchedulerService : fixedDelay() Method
+2021-03-14 17:27:28:488 INFO : Inside SchedulerService : fixedRate() Method
+2021-03-14 17:43:28:526 INFO : Inside SchedulerService : fixedDelay() Method
+2021-03-14 17:44:08:498 INFO : Inside SchedulerService : fixedRate() Method
+2021-03-28 16:40:29:245 INFO : The following profiles are active: dev
+2021-03-28 16:40:35:500 INFO : BeanPostProcessorsImplementation Instance is Created
+2021-03-28 16:40:42:010 INFO : Beans Ordered is as follows : 1,2,3
+2021-03-28 16:40:44:571 INFO : Bean2 Instantiated at Sun Mar 28 16:40:44 IST 2021
+2021-03-28 16:40:44:989 INFO : Bean1 Instantiated at Sun Mar 28 16:40:44 IST 2021
+2021-03-28 16:40:44:996 INFO : Inside postProcessBeforeInitialization() Method for Bean : customBean1
+2021-03-28 16:40:44:996 INFO : Inside CustomBean1 afterConstruction() Method
+2021-03-28 16:40:44:997 INFO : Inside CustomBean1 afterPropertiesSet() Method 
+2021-03-28 16:40:44:997 INFO : Inside CustomBean1 Init() Method
+2021-03-28 16:40:44:999 INFO : Inside postProcessAfterInitialization() Method for Bean : customBean1
+2021-03-28 16:40:50:490 INFO : Started BootApplication in 25.649 seconds (JVM running for 27.639)
+2021-03-28 16:41:00:486 INFO : Inside SchedulerService : fixedDelay() Method
+2021-03-28 16:41:37:633 INFO : Inside RetryableSerivce : retryService() Method 1 Time
+2021-03-28 16:41:39:451 INFO : Exception is going to be thrown from RetryableSerivce : dummyMethod() 1 Time
+2021-03-28 16:41:40:481 INFO : Inside SchedulerService : fixedRate() Method
+2021-03-28 16:41:42:455 INFO : Inside RetryableSerivce : retryService() Method 2 Time
+2021-03-28 16:41:43:472 INFO : Exception is going to be thrown from RetryableSerivce : dummyMethod() 2 Time
+2021-03-28 16:41:43:473 INFO : Inside RetryableService : recoveryService() Method, After 2 Attempts
+2021-03-28 16:42:01:879 INFO : Inside RetryableSerivce : retryService() Method 1 Time
+2021-03-28 16:42:03:408 INFO : Exception is going to be thrown from RetryableSerivce : dummyMethod() 1 Time
+2021-03-28 16:42:06:410 INFO : Inside RetryableSerivce : retryService() Method 2 Time
+2021-03-28 16:42:08:094 INFO : Exception is going to be thrown from RetryableSerivce : dummyMethod() 2 Time
+2021-03-28 16:42:08:095 INFO : Inside RetryableService : recoveryService() Method, After 2 Attempts
+2021-03-28 16:57:40:495 INFO : Inside SchedulerService : fixedDelay() Method
+2021-03-28 16:58:20:493 INFO : Inside SchedulerService : fixedRate() Method
+2021-03-28 17:14:20:507 INFO : Inside SchedulerService : fixedDelay() Method
+2021-03-28 17:15:00:490 INFO : Inside SchedulerService : fixedRate() Method
