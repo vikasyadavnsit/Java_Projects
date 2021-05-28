@@ -13,3 +13,22 @@ Key Features are
 etc.
 
 I am actively working on it, feel free to collaborate by  forking it.
+
+
+#api-gateway
+port:6000
+
+#config-server
+port:6050
+
+#discovery-server
+port:6060
+
+#microservice-1
+port:6070
+
+#microservice-2
+port:6180
+
+#microservice-3
+port:6190
