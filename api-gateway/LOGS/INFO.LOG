@@ -1,8 +1,0 @@
-2021-05-28 18:10:57:884 INFO : The following profiles are active: dev
-2021-05-28 18:13:30:755 INFO : The following profiles are active: dev
-2021-05-28 18:14:23:875 INFO : The following profiles are active: dev
-2021-05-28 18:16:25:935 INFO : The following profiles are active: dev
-2021-05-28 18:16:37:925 INFO : Started ApiGatewaySpringBootApplication in 16.438 seconds (JVM running for 27.872)
-2021-05-28 18:17:25:785 INFO : Starting ApiGatewaySpringBootApplication on WKWIN9777287 with PID 12860 (C:\onedrive\OneDrive - Publicis Groupe\Desktop\Java_Projects\api-gateway\bin\main started by vikyadav6 in C:\onedrive\OneDrive - Publicis Groupe\Desktop\Java_Projects\api-gateway)
-2021-05-28 18:17:25:796 INFO : The following profiles are active: dev
-2021-05-28 18:17:27:941 INFO : Started ApiGatewaySpringBootApplication in 2.983 seconds (JVM running for 7.132)

@@ -5,7 +5,7 @@ plugins {
 	id "org.sonarqube" version "2.7"
 }
 
-group = 'com.api'
+group = 'org.api'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '8'
 

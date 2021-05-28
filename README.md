@@ -14,21 +14,27 @@ etc.
 
 I am actively working on it, feel free to collaborate by  forking it.
 
+Microservices Configurations
 
-#api-gateway
-port:6000
+# api-gateway
+port:6010
 
-#config-server
+# config-server
 port:6050
 
-#discovery-server
+# discovery-server
 port:6060
 
-#microservice-1
+# microservice-1
 port:6070
 
-#microservice-2
+# microservice-2
 port:6180
 
-#microservice-3
+# microservice-3
 port:6190
+
+
+# Project Configurations
+
+1. To Build Jars for all projects : Go to z-scripts folder and run the buil-java-projects-jar.sh
