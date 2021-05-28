@@ -1,1 +1,0 @@
-2020-09-12 23:01:51:136 ERROR : SQL Exception Occured : could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement

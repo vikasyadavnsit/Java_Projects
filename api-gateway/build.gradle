@@ -7,7 +7,12 @@ plugins {
 
 group = 'com.api'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '14'
+sourceCompatibility = '8'
+
+jar {
+    archiveBaseName = 'api-gateway'
+    archiveVersion =  '1.0.0'
+}
 
 repositories {
 	mavenCentral()

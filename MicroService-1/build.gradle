@@ -7,7 +7,12 @@ plugins {
 
 group = 'com.battleramp'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '14'
+sourceCompatibility = '8'
+
+jar {
+    archiveBaseName = 'microservice-1'
+    archiveVersion =  '1.0.0'
+}
 
 repositories {
 	mavenCentral()
