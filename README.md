@@ -23,7 +23,9 @@ port:6010
 port:6050
 
 # discovery-server
-port:6060
+port: 6060
+address: http://localhost:6060/discovery-server/
+
 
 # microservice-1
 port:6070
