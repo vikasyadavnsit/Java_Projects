@@ -1,2 +1,5 @@
 #### Redis Data ####
-local-data/master/
+local-data/master/*
+
+#### exception to the rule
+!local-data/master/.gitkeep
