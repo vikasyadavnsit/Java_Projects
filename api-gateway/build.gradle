@@ -35,10 +35,14 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-zuul'
     //implementation 'org.springframework.cloud:spring-cloud-starter-netflix-hystrix'	
+<<<<<<< HEAD
 	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+=======
+>>>>>>> c34771a9c456b15f20c99bdc87b0a106c75d3180
     //implementation 'org.springframework.boot:spring-boot-starter-security'
 	//implementation 'org.springframework.boot:spring-boot-starter-cache' 
 	//implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	  testImplementation('org.springframework.boot:spring-boot-starter-test') {
