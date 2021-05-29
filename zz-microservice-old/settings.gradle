@@ -12,4 +12,4 @@ pluginManagement {
 		}
 	}
 }
-rootProject.name = 'microservice-1'
+rootProject.name = 'zz-microservice-old'

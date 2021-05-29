@@ -1,0 +1,30 @@
+
+spring:  application:    name: api-gateway  profiles:    active:    - dev
+    
+server:  port: 6010  servlet:    context-path: /${spring.application.name} 
+    
+custom:
+  eureka-server-port: 6060
+  eureka-context-path: /discovery-server
+  eureka-server-address: localhost    
+    
+eureka:  client:    enabled: true
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:      defaultZone : http://${custom.eureka-server-address}:${custom.eureka-server-port}${custom.eureka-context-path}/eureka    
+
+zuul:  routes:    microservice-1:
+      path: /microservice-1/**
+      service-id: microservice-1  
+      #strip-prefix: false
+      #url: http://localhost:6070/microservice-1/
+    microservice-2:
+      path: /microservice-1/**
+      service-id: microservice-2  
+      #strip-prefix: false
+    microservice-3:
+      path: /microservice-1/**
+      service-id: microservice-3  
+      #strip-prefix: false        strip-prefix: false
+    
+   

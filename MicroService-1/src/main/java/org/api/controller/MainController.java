@@ -10,7 +10,7 @@ public class MainController {
 
 	@GetMapping
 	public String test() {
-		return "api-gateway";
+		return "Microservice-1";
 	}
 
 }

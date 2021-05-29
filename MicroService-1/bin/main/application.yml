@@ -1,0 +1,29 @@
+
+spring:
+  application:
+    name: microservice-1
+  profiles:
+    active:
+    - dev  autoconfigure:    exclude:    - org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
+    - org.springframework.boot.actuate.autoconfigure.security.servlet.ManagementWebSecurityAutoConfiguration
+    
+server:
+  port: 6070
+  servlet:
+    context-path: /${spring.application.name} 
+    
+custom:
+  eureka-server-port: 6060
+  eureka-context-path: /discovery-server
+  eureka-server-address: localhost    
+    
+eureka:
+  client:
+    enabled: true
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone : http://${custom.eureka-server-address}:${custom.eureka-server-port}${custom.eureka-context-path}/eureka    
+
+
+   

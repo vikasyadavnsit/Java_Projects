@@ -27,11 +27,15 @@ ext {
 dependencies {
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
+    
+    // https://mvnrepository.com/artifact/com.marcosbarbero.cloud/spring-cloud-zuul-ratelimit
+	//implementation group: 'com.marcosbarbero.cloud', name: 'spring-cloud-zuul-ratelimit', version: '2.4.2.RELEASE'
     		
 	//implementation 'org.springframework.cloud:spring-cloud-starter-config'
-	//implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-zuul'
     //implementation 'org.springframework.cloud:spring-cloud-starter-netflix-hystrix'	
-	//implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
     //implementation 'org.springframework.boot:spring-boot-starter-security'
 	//implementation 'org.springframework.boot:spring-boot-starter-cache' 
 	//implementation 'org.springframework.boot:spring-boot-starter-data-redis'
