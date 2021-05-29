@@ -1,0 +1,5 @@
+# ignore files in folder
+local-data/master/*
+
+# but keep the folder
+!local-data/master/.keep
