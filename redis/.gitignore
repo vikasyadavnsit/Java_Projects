@@ -1,0 +1,3 @@
+#### Redis Data ####
+./local-data/master/**
+./local-data/slave/**
