@@ -6,7 +6,10 @@ spring:
     active:
     - dev  autoconfigure:    exclude:    - org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
     - org.springframework.boot.actuate.autoconfigure.security.servlet.ManagementWebSecurityAutoConfiguration
-    
+  sleuth:
+    sampler:
+      probability: 100
+          
 server:
   port: 6070
   servlet:

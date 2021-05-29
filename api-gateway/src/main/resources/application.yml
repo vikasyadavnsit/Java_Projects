@@ -1,5 +1,5 @@
 
-spring:  application:    name: api-gateway  profiles:    active:    - dev
+spring:  application:    name: api-gateway  profiles:    active:    - dev  sleuth:    sampler:      probability: 100
     
 server:  port: 6010  servlet:    context-path: /${spring.application.name} 
     
@@ -16,15 +16,14 @@ eureka:  client:    enabled: true
 zuul:  routes:    microservice-1:
       path: /microservice-1/**
       service-id: microservice-1  
-      #strip-prefix: false
+      strip-prefix: false
       #url: http://localhost:6070/microservice-1/
     microservice-2:
-      path: /microservice-1/**
+      path: /microservice-2/**
       service-id: microservice-2  
-      #strip-prefix: false
+      strip-prefix: false
     microservice-3:
-      path: /microservice-1/**
+      path: /microservice-3/**
       service-id: microservice-3  
-      #strip-prefix: false        strip-prefix: false
-    
+      strip-prefix: false      
    
