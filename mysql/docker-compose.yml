@@ -1,0 +1,28 @@
+# Use root as user
+version: '3.1'
+
+services:
+
+  mysql-db: # mysql-db is the server name
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+        #MYSQL_DATABASE: 'specificDB'
+        MYSQL_USER: 'username'
+        MYSQL_PASSWORD: 'password'
+        MYSQL_ROOT_PASSWORD: mysql_password
+    ports:
+        - 3306:3306  
+    volumes:
+        - ./data:/var/lib/mysql
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8188:8080
+
+
+# https://hub.docker.com/_/mysql
+# https://medium.com/@etiennerouzeaud/play-databases-with-adminer-and-docker-53dc7789f35f
