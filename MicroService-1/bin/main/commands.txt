@@ -1,0 +1,15 @@
+============== Libaray Events Post Command =============
+
+curl -X POST \
+  http://localhost:6070/microservice-1/v1/libraryevent \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -H 'postman-token: 787d02cf-c0b0-34d0-472d-978cf25a46a2' \
+  -d '{
+	"libraryEventId":1,
+	"book": {
+		"id":1,
+		"name":"testbook",
+		"author":"author1"
+	}
+}'

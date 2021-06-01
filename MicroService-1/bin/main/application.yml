@@ -9,7 +9,13 @@ spring:
   sleuth:
     sampler:
       probability: 100
-          
+  zipkin:    enabled: false
+  kafka:    template:      default-topic: library-events
+    producer:      bootstrap-servers:      - localhost:29092
+      key-serializer: org.apache.kafka.common.serialization.IntegerSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer 
+    admin:      properties:        bootstrap.servers: localhost:29092
+            
 server:
   port: 6070
   servlet:
@@ -22,7 +28,7 @@ custom:
     
 eureka:
   client:
-    enabled: true
+    enabled: false
     register-with-eureka: true
     fetch-registry: true
     service-url:
