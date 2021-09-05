@@ -1,5 +1,7 @@
 package org.api.domain.controller;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import lombok.extern.slf4j.Slf4j;
 import org.api.domain.LibraryEvent;
 import org.api.domain.producer.LibraryEventProducer;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,34 +11,30 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-
-import lombok.extern.slf4j.Slf4j;
-
 @RestController
 @Slf4j
 public class LibraryEventsController {
 
-	@Autowired
-	LibraryEventProducer libraryEventProducer;
+    @Autowired
+    LibraryEventProducer libraryEventProducer;
 
-	@PostMapping("/v1/libraryevent")
-	public ResponseEntity<LibraryEvent> postLibraryEvent(@RequestBody LibraryEvent libraryEvent)
-			throws JsonProcessingException {
+    @PostMapping("/v1/libraryevent")
+    public ResponseEntity<LibraryEvent> postLibraryEvent(@RequestBody LibraryEvent libraryEvent)
+            throws JsonProcessingException {
 
-		log.info("Before sendLibarayEvent");
-		// Asynchronous request
-		libraryEventProducer.sendLibarayEvent(libraryEvent);
+        log.info("Before sendLibarayEvent");
+        // Asynchronous request
+        libraryEventProducer.sendLibarayEvent(libraryEvent);
 
-		// Asynchronous Approach2
-		libraryEventProducer.sendLibarayEventAsynchronousApproach2(libraryEvent);
+        // Asynchronous Approach2
+        libraryEventProducer.sendLibarayEventAsynchronousApproach2(libraryEvent);
 
-		// Synchronous request
-		libraryEventProducer.sendLibraryEventSynchronous(libraryEvent);
+        // Synchronous request
+        libraryEventProducer.sendLibraryEventSynchronous(libraryEvent);
 
-		log.info("After sendLibarayEvent");
+        log.info("After sendLibarayEvent");
 
-		return ResponseEntity.status(HttpStatus.CREATED).body(libraryEvent);
-	}
+        return ResponseEntity.status(HttpStatus.CREATED).body(libraryEvent);
+    }
 
 }

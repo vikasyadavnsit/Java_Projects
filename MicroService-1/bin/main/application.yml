@@ -1,38 +1,47 @@
-
 spring:
   application:
     name: microservice-1
   profiles:
     active:
-    - dev  autoconfigure:    exclude:    - org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
-    - org.springframework.boot.actuate.autoconfigure.security.servlet.ManagementWebSecurityAutoConfiguration
+      - dev
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
+      - org.springframework.boot.actuate.autoconfigure.security.servlet.ManagementWebSecurityAutoConfiguration
   sleuth:
     sampler:
       probability: 100
-  zipkin:    enabled: false
-  kafka:    template:      default-topic: library-events
-    producer:      bootstrap-servers:      - localhost:29092
+  zipkin:
+    enabled: false
+  kafka:
+    template:
+      default-topic: library-events
+    producer:
+      bootstrap-servers:
+        - localhost:29092
       key-serializer: org.apache.kafka.common.serialization.IntegerSerializer
-      value-serializer: org.apache.kafka.common.serialization.StringSerializer 
-    admin:      properties:        bootstrap.servers: localhost:29092
-            
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    admin:
+      properties:
+        bootstrap.servers: localhost:29092
+
 server:
   port: 6070
   servlet:
-    context-path: /${spring.application.name} 
-    
+    context-path: /${spring.application.name}
+
 custom:
   eureka-server-port: 6060
   eureka-context-path: /discovery-server
-  eureka-server-address: localhost    
-    
+  eureka-server-address: localhost
+
 eureka:
   client:
     enabled: false
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone : http://${custom.eureka-server-address}:${custom.eureka-server-port}${custom.eureka-context-path}/eureka    
+      defaultZone: http://${custom.eureka-server-address}:${custom.eureka-server-port}${custom.eureka-context-path}/eureka
 
 
    
