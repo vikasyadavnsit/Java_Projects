@@ -1,4 +1,4 @@
 #!/usr/bin/bash
 
 echo "Stopping Zipkin Server";
-cd ./../..services/zipkin/ && exec docker-compose down
+cd ./../../services/zipkin/ && exec docker-compose down

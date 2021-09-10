@@ -1,6 +1,6 @@
 <configuration>
 
-    <property name="LOGGER_PATH" value="./../logs/landing-microservice/"/>
+    <property name="LOGGER_PATH" value="./../../logs/landing-microservice/"/>
     <property name="EACH_LOG_FILE_SIZE" value="10MB"/>
     <property name="DAYS_TO_SAVE_LOGS" value="20"/>
     <property name="TOTAL_LOG_CAP_SIZE" value="1GB"/>

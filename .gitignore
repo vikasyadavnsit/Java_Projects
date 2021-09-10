@@ -1,0 +1,10 @@
+/microservices-cluster/logs/landing-microservice/
+/microservices-cluster/services/grafana/data
+/microservices-cluster/services/kafka/kafka_data
+/microservices-cluster/services/kafka/zookeeper_data
+/microservices-cluster/services/mongodb/data
+/microservices-cluster/services/mysql/data
+/microservices-cluster/services/prometheus/data
+/microservices-cluster/services/redis/data
+
+
