@@ -46,7 +46,10 @@ eureka:
 
 #Exposing all actuator endpoints, without security
 management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
   endpoint:
     shutdown:
-      enabled=true:
-        management.endpoints.web.exposure.include=*
+      enabled: true

@@ -6,8 +6,6 @@ g
 e
 5scripts/stop-independent-service/stop-mysql-server.sh,e\b\eb5cb9c019c7a3d63fa9926cdefa04ecbf58cada
 j
-:scripts/stop-independent-service/stop-prometheus-server.sh,f\f\ffd46b04ea51f6c8fac8889137692804b30a0af0
-j
 :scripts/stop-independent-service/stop-redis-ha-sentinel.sh,4\4\445086ae88960ffcce9d129caaf010c9752b517b
 f
 6scripts/stop-independent-service/stop-zipkin-server.sh,9\0\90acc35a5e7597cd0ee5295aecbd7ec6f407da32
@@ -25,8 +23,6 @@ l
 <scripts/start-independent-service/start-grafana-dashboard.sh,5\e\5ede5fcc256336c024885175e8442b616768720a
 q
 Ascripts/start-stop-all-independent-services/start-all-services.sh,1\0\10169ec3276fa547054405332181b4f81e84e326
-j
-:scripts/stop-independent-service/stop-grafana-dashboard.sh,2\0\2048cf7440879a485ce623aa3935969f5b9d0532
 h
 8scripts/stop-independent-service/stop-kafka-zookeeper.sh,e\6\e63641bf2465a385c9455fb6fef83bd6baa85141
 a
