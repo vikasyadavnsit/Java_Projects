@@ -12,7 +12,7 @@ spring:
     sampler:
       probability: 100
   zipkin:
-    enabled: false
+    enabled: true
   kafka:
     template:
       default-topic: library-events
@@ -43,5 +43,13 @@ eureka:
     service-url:
       defaultZone: http://${custom.eureka-server-address}:${custom.eureka-server-port}${custom.eureka-context-path}/eureka
 
-
+#Exposing all actuator endpoints, without security
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    shutdown:
+      enabled: true
    
