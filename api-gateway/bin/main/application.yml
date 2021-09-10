@@ -1,68 +1,0 @@
-
-spring:  application:    name: api-gateway  profiles:    active:    - dev  sleuth:    enabled: true
-    sampler:      probability: 100
-  zipkin:
-    enabled: true          redis:    database: 0
-    host: localhost
-    port: 6379
-    password: str0ng_passw0rd
-    timeout: 60000    
-server:  port: 6010  servlet:    context-path: /${spring.application.name} 
-    
-custom:
-  eureka-server-port: 6060
-  eureka-context-path: /discovery-server
-  eureka-server-address: localhost
-  
-  rate-limiter-limit: 10
-  rate-limiter-quota: 1000    
-  rate-limiter-referesh-interval: 60
-    
-eureka:  client:    enabled: true
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:      defaultZone : http://${custom.eureka-server-address}:${custom.eureka-server-port}${custom.eureka-context-path}/eureka    
-
-zuul:  routes:    microservice-1:
-      path: /microservice-1/**
-      service-id: microservice-1  
-      strip-prefix: false
-      #url: http://localhost:6070/microservice-1/
-    microservice-2:
-      path: /microservice-2/**
-      service-id: microservice-2  
-      strip-prefix: false
-    microservice-3:
-      path: /microservice-3/**
-      service-id: microservice-3  
-      strip-prefix: false          api-gateway:
-      path: /api-gateway/**
-      service-id: api-gateway
-      strip-prefix: false
-        
-  ratelimit:    enabled: true
-    key-prefix: rate-limiter #default is application-name
-    repository: REDIS
-    behind-proxy: true
-    response-headers: verbose
-    default-policy-list: #optional - will apply unless specific policy exists
-      - limit: 10 #optional - request number limit per refresh interval window
-        quota: 1000 #optional - request time limit per refresh interval window (in seconds)
-        refresh-interval: 60 #default value (in seconds)
-        type: #optional
-          - user
-          - origin
-          - url
-          - http_method
-    policy-list:
-      api-gateway: #It is not wokring for this because it has its own web server and it is working only for proxy routes
-        - limit: ${custom.rate-limiter-limit}
-          quota: ${custom.rate-limiter-quota} #optional - request time limit per refresh interval window (in seconds)
-          refresh-interval: ${custom.rate-limiter-referesh-interval} #default value (in seconds)
-      microservice-1:
-        - limit: ${custom.rate-limiter-limit}
-          quota: ${custom.rate-limiter-quota} 
-          refresh-interval: ${custom.rate-limiter-referesh-interval}
-
-
-          
