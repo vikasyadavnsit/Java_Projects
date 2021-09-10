@@ -15,8 +15,6 @@ h
 8scripts/start-independent-service/start-zipkin-server.sh,9\5\959e5c5ad378a4292923b91568618b19aeeb7f28
 l
 <scripts/start-independent-service/start-redis-ha-sentinel.sh,7\8\78fd586f2cac498e455e6859422c743fae8757d0
-l
-<scripts/start-independent-service/start-prometheus-server.sh,9\c\9c1c1b9cd94b41e65091c761af08400106bafe1d
 g
 7scripts/start-independent-service/start-mysql-server.sh,5\c\5cdb83a8adb24bd8640d3a7d271eb566d3a5c40f
 i
