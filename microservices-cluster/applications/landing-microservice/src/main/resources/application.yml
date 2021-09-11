@@ -9,10 +9,13 @@ spring:
       - org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
       - org.springframework.boot.actuate.autoconfigure.security.servlet.ManagementWebSecurityAutoConfiguration
   sleuth:
+    enabled: true
     sampler:
       probability: 100
+    sender.type: web
   zipkin:
     enabled: true
+    base-url: http://localhost:9411
   kafka:
     template:
       default-topic: library-events
@@ -52,4 +55,20 @@ management:
   endpoint:
     shutdown:
       enabled: true
-   
+
+#Logbook Configuration
+logbook:
+  exclude:
+    - /actuator/**
+  filter.enabled: true
+  secure-filter.enabled: true
+  format.style: json
+  obfuscate:
+    headers:
+      - Authorization
+      - X-Secret
+    parameters:
+      - access_token
+      - password
+  write:
+    chunk-size: 50000
