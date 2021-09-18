@@ -4,6 +4,8 @@ spring:
   profiles:
     active:
       - dev
+  aop:
+    auto: true
   autoconfigure:
     exclude:
       - org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
@@ -53,3 +55,9 @@ management:
   endpoint:
     shutdown:
       enabled: true
+
+#Ngrok Server
+ngrok:
+  enabled: true
+
+

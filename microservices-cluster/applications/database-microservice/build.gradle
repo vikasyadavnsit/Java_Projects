@@ -24,6 +24,7 @@ ext {
 }
 
 dependencies {
+	implementation 'io.github.kilmajster:ngrok-spring-boot-starter:0.3.7'
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.springframework.boot:spring-boot-starter-batch'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
@@ -51,6 +52,7 @@ dependencies {
 	implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.5'
 	implementation 'com.fasterxml.jackson.core:jackson-core:2.12.5'
 	implementation 'com.fasterxml.jackson.core:jackson-annotations:2.12.5'
+    implementation 'org.springframework.boot:spring-boot-starter-aop:2.5.4'
 //	implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity5'
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
